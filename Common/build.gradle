@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+    implementation "com.github.bumptech.glide:okhttp3-integration:$rootProject.glideVersion"
+    //https://github.com/bumptech/glide
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+    api project(':Glide')
+    api project(':Widget')
+}

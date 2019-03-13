@@ -1,0 +1,21 @@
+<resources>
+
+    <!--android:theme="@style/Theme.AppCompat.NoActionBar"-->
+
+    <!-- 全屏浏览大图 -->
+    <style name="Fullscreen.Basic" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="Fullscreen.Transparent" parent="@style/Fullscreen.Basic">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+
+
+
+</resources>

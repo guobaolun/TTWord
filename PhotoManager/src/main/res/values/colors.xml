@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 应用主题颜色 -->
+    <color name="theme_bg_b">#1d2d49</color>
+    <!--<color name="app_theme_color">#6BAFF0</color>-->
+
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent90_white">#E5ffffff</color>
+
+
+    <color name="crop_color_dimmed">#8c000000</color>
+    <color name="crop_color_grid">#80ffffff</color>
+
+    <color name="title_text_normal">#88ffffff</color>
+
+    <color name="title_text">#ffffff</color>
+
+
+
+    <color name="white_text_button_normal">#ffffff</color>
+    <color name="white_text_button_pressed">#70FFFFFF</color>
+
+
+
+
+
+</resources>

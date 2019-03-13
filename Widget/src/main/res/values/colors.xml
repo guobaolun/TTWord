@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="LetterView_text">#6BAFF0</color>
+
+    <color name="gray">#efefef</color>
+
+    <color name="refresh_text">#A0A0A0</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+</resources>

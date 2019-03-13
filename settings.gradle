@@ -1,0 +1,1 @@
+include ':app', ':Common', ':Glide', ':PhotoManager', ':AutoScrollViewpager', ':Widget'

@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        //添加部分
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+
+//    implementation project(':Glide')
+//    implementation project(':SwipeToLoadLayout')
+
+//    https://github.com/Aspsine/SwipeToLoadLayout
+    implementation 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+
+//    https://github.com/lsjwzh/MaterialLoadingProgressBar
+    implementation 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+
+//    https://github.com/yanzhenjie/SwipeRecyclerView
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+}

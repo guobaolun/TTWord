@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_text_color">#333333</color>
+    <color name="dialog_line_color">#D9D9D9</color>
+
+    <color name="dialog_gray">#EFEFEF</color>
+    <color name="dialog_button_gray_pressed">#d1d1d1</color>
+</resources>
