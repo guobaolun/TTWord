@@ -9,10 +9,11 @@ import android.view.ViewGroup;
 
 import com.snowy.ttword.R;
 
+
 /**
- * @author guobaolun
+ * 只为占位
  */
-public class WordBookFragment extends Fragment {
+public class EmptyFragment extends Fragment {
 
 
 
@@ -22,4 +23,5 @@ public class WordBookFragment extends Fragment {
 
         return inflater.inflate(R.layout.fragment_study, container,false);
     }
+
 }

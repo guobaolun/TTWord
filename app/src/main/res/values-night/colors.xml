@@ -2,11 +2,11 @@
 <resources>
 
 
-    <!--night-->
-    <color name="theme_bg_a">#081724</color>
-    <color name="theme_bg_b">#172539</color>
-    <!-- 底部菜单 -->
-    <color name="theme_bg_c">#172740</color>
+    <!--&lt;!&ndash;night&ndash;&gt;-->
+    <!--<color name="theme_bg_a">#081724</color>-->
+    <!--<color name="theme_bg_b">#172539</color>-->
+    <!--&lt;!&ndash; 底部菜单 &ndash;&gt;-->
+    <!--<color name="theme_bg_c">#172740</color>-->
 
 
 </resources>

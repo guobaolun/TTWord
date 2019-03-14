@@ -1,13 +1,15 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
 
 
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 28
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -26,9 +28,8 @@ android {
 
 dependencies {
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation 'com.alibaba:fastjson:1.1.67.android'
-    implementation "com.github.bumptech.glide:okhttp3-integration:$rootProject.glideVersion"
-    //https://github.com/bumptech/glide
+
+
     implementation 'com.alibaba:fastjson:1.1.67.android'
     api project(':Glide')
     api project(':Widget')

@@ -58,7 +58,7 @@ public class IndexActivity extends BaseActivity {
 
         mTabHost.setup(this, getSupportFragmentManager(), R.id.index_body);
 
-        mTabHost.getTabWidget().setDividerDrawable(R.color.theme_bg_c);
+        mTabHost.getTabWidget().setDividerDrawable(R.color.google_blue);
 
         for (int i = 0; i < fragmentArray.length; i++) {
             //为每一个Tab按钮设置图标、文字和内容

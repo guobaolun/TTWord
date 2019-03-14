@@ -52,4 +52,7 @@ dependencies {
 
 //    https://github.com/yanzhenjie/SwipeRecyclerView
     implementation 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+
+
+    implementation 'com.github.thinkcool:circletextimageview:1.0.20151218'
 }

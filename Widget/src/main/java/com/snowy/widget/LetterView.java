@@ -46,13 +46,14 @@ public class LetterView extends View {
             paint.setColor(textColor);
             paint.setTypeface(Typeface.DEFAULT_BOLD);
             paint.setAntiAlias(true);
-            paint.setTextSize(WidgetUtils.dip2px(getContext(),10));//
+            paint.setTextSize(10);//
+//            paint.setTextSize(dip2px(getContext(),10));//
             if (i == choose) {
 
                 paint.setColor(Color.parseColor("#3399ff"));
                 paint.setFakeBoldText(true);
             }
-            float xPos = width / 2 - paint.measureText(b[i]) / 2;
+            float xPos = (width >> 1) - paint.measureText(b[i]) / 2;
             float yPos = singleHeight * i + singleHeight;
 
             canvas.drawText(b[i], xPos, yPos, paint);
@@ -99,10 +100,6 @@ public class LetterView extends View {
         return true;
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        return super.onTouchEvent(event);
-    }
 
     public void setOnTouchingLetterChangedListener(OnTouchingLetterChangeListener onTouchingLetterChangedListener) {
         this.onTouchingLetterChangedListener = onTouchingLetterChangedListener;

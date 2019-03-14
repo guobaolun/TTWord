@@ -32,9 +32,6 @@ dependencies {
     implementation project(':Common')
     implementation project(':Glide')
 
-
-
-
     //https://github.com/Yalantis/uCrop
     implementation 'com.github.yalantis:ucrop:2.2.2'
 }
