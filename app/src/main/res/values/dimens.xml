@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="top_title_text_size">16dp</dimen>
+    <dimen name="top_bt_text_size">14dp</dimen>
+    <dimen name="top_height">44dp</dimen>
+
+    <dimen name="item_height">50dp</dimen>
+    <dimen name="item_text_size">14dp</dimen>
+    <dimen name="item_margin_left_and_right">20dp</dimen>
+    <dimen name="item_text_margin_icon">10dp</dimen>
+    <dimen name="item_line_height">0.8dp</dimen>
+
+
+    <dimen name="login_icon_size">36dp</dimen>
+    <dimen name="login_icon_pading">10dp</dimen>
+
+
+    <dimen name="phonetic_list_text">14dp</dimen>
+    <dimen name="phonetic_list_bt_margin">1dp</dimen>
+
+</resources>

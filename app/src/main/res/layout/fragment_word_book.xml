@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_bg_a"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/theme_bg_b">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="单词本"
+                android:textColor="@color/index_fragment_title_text"
+                android:textSize="@dimen/top_title_text_size" />
+
+
+            <Button
+
+                android:id="@+id/create_bt"
+                style="@style/Button"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="新建"
+                android:textColor="@drawable/selector_white_text_button_color"
+                android:textSize="@dimen/top_title_text_size" />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/layout_recycler" />
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_login" />
+
+
+</LinearLayout>

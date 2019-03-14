@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--night-->
+    <color name="theme_bg_a">#081724</color>
+    <color name="theme_bg_b">#172539</color>
+    <!-- 底部菜单 -->
+    <color name="theme_bg_c">#172740</color>
+
+
+</resources>
