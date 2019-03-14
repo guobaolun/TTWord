@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.snowy.ttword">
 
+    <!--https://blog.csdn.net/github_37847975/article/details/78741725-->
     <application
         android:name=".MyApplication"
         android:allowBackup="false"
