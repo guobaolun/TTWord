@@ -1,5 +1,6 @@
 package com.snowy.ttword.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.snowy.common.activity.BaseActivity;
@@ -14,8 +15,8 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        startActivity(new Intent(this,IndexActivity.class));
-//        finish();
+        startActivity(new Intent(this,IndexActivity.class));
+        finish();
     }
 
 

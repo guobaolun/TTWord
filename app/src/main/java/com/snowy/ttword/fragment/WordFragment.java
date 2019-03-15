@@ -25,6 +25,6 @@ public class WordFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
 
-        return inflater.inflate(R.layout.fragment_study, container,false);
+        return inflater.inflate(R.layout.fragment_word, container,false);
     }
 }

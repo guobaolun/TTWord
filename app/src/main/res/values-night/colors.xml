@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="index_menu_bg">#172941</color>
+    <color name="theme_bg">#081724</color>
+    <color name="theme_item_bg">#131E30</color>
 
-    <!--&lt;!&ndash;night&ndash;&gt;-->
-    <!--<color name="theme_bg_a">#081724</color>-->
-    <!--<color name="theme_bg_b">#172539</color>-->
-    <!--&lt;!&ndash; 底部菜单 &ndash;&gt;-->
-    <!--<color name="theme_bg_c">#172740</color>-->
+
+    <color name="fragment_word_item_text_pressed">#70FFFFFF</color>
+    <color name="fragment_word_item_text_normal">#ffffff</color>
 
 
 </resources>
