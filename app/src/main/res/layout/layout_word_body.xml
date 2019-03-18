@@ -15,9 +15,9 @@
         android:orientation="vertical">
 
         <View
-            android:background="@color/theme_bg"
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="1dp"
+            android:background="@color/theme_bg" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,11 +25,11 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:background="@drawable/selector_fragment_word_item"
                 android:id="@+id/recite_word_count_ll"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/selector_fragment_word_item"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -50,16 +50,16 @@
             </LinearLayout>
 
             <View
-                android:background="@color/theme_bg"
                 android:layout_width="1dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:background="@color/theme_bg" />
 
             <LinearLayout
-                android:background="@drawable/selector_fragment_word_item"
                 android:id="@+id/day_word_count_ll"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/selector_fragment_word_item"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -81,15 +81,16 @@
 
 
             <View
-                android:background="@color/theme_bg"
                 android:layout_width="1dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:background="@color/theme_bg" />
+
             <LinearLayout
-                android:background="@drawable/selector_fragment_word_item"
                 android:id="@+id/unfinished_count_ll"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/selector_fragment_word_item"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -112,9 +113,9 @@
 
 
         <View
-            android:background="@color/theme_bg"
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="1dp"
+            android:background="@color/theme_bg" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,11 +123,11 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:background="@drawable/selector_fragment_word_item"
                 android:id="@+id/total_count_ll"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/selector_fragment_word_item"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -145,19 +146,19 @@
                     android:textColor="@drawable/selector_fragment_word_item_text" />
 
             </LinearLayout>
-            <View
-                android:background="@color/theme_bg"
-                android:layout_width="1dp"
-                android:layout_height="match_parent"/>
 
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/theme_bg" />
 
 
             <LinearLayout
-                android:background="@drawable/selector_fragment_word_item"
                 android:id="@+id/month_word_count_ll"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/selector_fragment_word_item"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -178,16 +179,16 @@
             </LinearLayout>
 
             <View
-                android:background="@color/theme_bg"
                 android:layout_width="1dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:background="@color/theme_bg" />
 
             <LinearLayout
-                android:background="@drawable/selector_fragment_word_item"
                 android:id="@+id/accomplish_count_ll"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/selector_fragment_word_item"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -209,42 +210,24 @@
         </LinearLayout>
 
         <View
-            android:background="@color/theme_bg"
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
-
-
-
-
-            <Button
-                android:id="@+id/recite_bt"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="45dp"
-                android:background="@drawable/selector_fragment_word_start_bt"
-                android:gravity="center"
-                android:paddingEnd="45dp"
-                android:paddingStart="45dp"
-                android:text="开始背单词"
-                android:textColor="@drawable/selector_fragment_word_item_text"
-                android:textSize="15dp" />
-
+            android:layout_height="1dp"
+            android:background="@color/theme_bg" />
 
 
         <Button
+            android:id="@+id/recite_bt"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="45dp"
+            android:background="@drawable/selector_fragment_word_start_bt"
             android:gravity="center"
-            android:paddingEnd="45dp"
             android:paddingStart="45dp"
+            android:paddingEnd="45dp"
             android:text="开始背单词"
             android:textColor="@drawable/selector_fragment_word_item_text"
             android:textSize="15dp" />
-
-
 
 
         <View
@@ -257,7 +240,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/item_height"
             android:background="@drawable/selector_fragment_word_item"
-            android:clickable="true">
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/icon_phonetic"
@@ -299,8 +283,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/item_height"
             android:background="@drawable/selector_fragment_word_item"
-            android:focusable="true"
-            android:clickable="true">
+            android:clickable="true"
+            android:focusable="true">
 
 
             <com.thinkcool.circletextimageview.CircleTextImageView
@@ -308,6 +292,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_centerVertical="true"
+
                 android:layout_marginStart="@dimen/item_margin_left_and_right"
                 android:gravity="center"
                 app:citv_border_color="@android:color/white"
@@ -400,8 +385,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/item_height"
             android:background="@drawable/selector_fragment_word_item"
-            android:focusable="true"
-            android:clickable="true">
+            android:clickable="true"
+            android:focusable="true">
 
 
             <com.thinkcool.circletextimageview.CircleTextImageView
@@ -434,11 +419,33 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/item_margin_left_and_right"
-                android:src="@drawable/ic_arrow"/>
+                android:src="@drawable/ic_arrow" />
 
 
         </RelativeLayout>
 
+
+        <com.snowy.widget.ItemView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:itemView_icon_src="@drawable/ic_phonetic"
+            />
+
+
+
+        <!--<attr name="itemView_icon_width" format="dimension"/>-->
+        <!--<attr name="itemView_icon_height" format="dimension"/>-->
+        <!--<attr name="itemView_icon_marginStart" format="dimension"/>-->
+        <!--<attr name="itemView_icon_text" format="string"/>-->
+        <!--<attr name="itemView_icon_textColor" format="color"/>-->
+        <!--<attr name="itemView_icon_textSize" format="dimension"/>-->
+        <!--<attr name="itemView_icon_background" format="reference|color"/>-->
+        <!--<attr name="itemView_icon_src" format="reference"/>-->
+        <!--<attr name="itemView_icon_border_width" format="dimension"/>-->
+        <!--<attr name="itemView_icon_border_color" format="color"/>-->
+        <!--<attr name="itemView_icon_visibility">-->
+            <!---->
+            <!---->
 
         <View
             android:layout_width="match_parent"

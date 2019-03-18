@@ -137,4 +137,50 @@
 
 
 
+    <declare-styleable name="ItemView">
+        <attr name="itemView_icon_width" format="dimension"/>
+        <attr name="itemView_icon_height" format="dimension"/>
+        <attr name="itemView_icon_marginStart" format="dimension"/>
+        <attr name="itemView_icon_text" format="string"/>
+        <attr name="itemView_icon_textColor" format="color"/>
+        <attr name="itemView_icon_textSize" format="dimension"/>
+        <attr name="itemView_icon_background" format="reference|color"/>
+        <attr name="itemView_icon_src" format="reference"/>
+        <attr name="itemView_icon_border_width" format="dimension"/>
+        <attr name="itemView_icon_border_color" format="color"/>
+        <attr name="itemView_icon_visibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+
+        <attr name="itemView_textView_textSize" format="dimension"/>
+        <attr name="itemView_textView_textColor" format="color"/>
+        <attr name="itemView_textView_text" format="string"/>
+        <attr name="itemView_textView_marginStart" format="dimension"/>
+        <attr name="itemView_textView_width" format="dimension"/>
+        <attr name="itemView_textView_height" format="dimension"/>
+
+        <attr name="itemView_arrow_height" format="dimension"/>
+        <attr name="itemView_arrow_width" format="dimension"/>
+        <attr name="itemView_arrow_marginEnd" format="dimension"/>
+        <attr name="itemView_arrow_text" format="string"/>
+        <attr name="itemView_arrow_textColor" format="color"/>
+        <attr name="itemView_arrow_textSize" format="dimension"/>
+        <attr name="itemView_arrow_src" format="reference"/>
+        <attr name="itemView_arrow_visibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+
+
+
+        <!--色带宽度-->
+    </declare-styleable>
+
+
+
+
+
 </resources>
