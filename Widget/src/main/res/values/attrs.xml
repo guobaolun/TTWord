@@ -150,8 +150,8 @@
         <attr name="itemView_icon_border_color" format="color"/>
         <attr name="itemView_icon_visibility">
             <enum name="visible" value="0" />
-            <enum name="invisible" value="1" />
-            <enum name="gone" value="2" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
         </attr>
 
         <attr name="itemView_textView_textSize" format="dimension"/>
@@ -170,9 +170,11 @@
         <attr name="itemView_arrow_src" format="reference"/>
         <attr name="itemView_arrow_visibility">
             <enum name="visible" value="0" />
-            <enum name="invisible" value="1" />
-            <enum name="gone" value="2" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
         </attr>
+
+
 
 
 

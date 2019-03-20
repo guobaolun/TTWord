@@ -26,6 +26,9 @@
 
 
     <dimen name="item_margin_left_and_right">20dp</dimen>
-    <dimen name="item_text_margin_icon">10dp</dimen>
+    <dimen name="item_text_margin_start">10dp</dimen>
+
+
+    <dimen name="item_view_default_text_size">14dp</dimen>
 
 </resources>
