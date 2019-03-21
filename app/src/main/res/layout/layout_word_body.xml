@@ -427,8 +427,8 @@
 
         <com.snowy.widget.ItemView
             android:layout_width="match_parent"
-            android:clickable="true"
             android:focusable="true"
+            android:clickable="true"
             android:layout_height="100dp"
             android:background="@drawable/selector_fragment_word_item"
 

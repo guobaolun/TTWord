@@ -22,6 +22,7 @@ import com.thinkcool.circletextimageview.CircleTextImageView;
 
 public class ItemView extends LinearLayout {
 
+
     private String iconText;
     private int iconHeight;
     private int iconWidth;
@@ -55,20 +56,12 @@ public class ItemView extends LinearLayout {
     public ItemView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
-
+//
     public ItemView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         inflate(context, R.layout.widget_item_view, this);
 
 
-//    <com.thinkcool.circletextimageview.CircleTextImageView
-//		android:id="@+id/icon_view"
-//		android:layout_width="22dp"
-//		android:layout_height="22dp"
-//		android:layout_centerVertical="true"
-//		android:layout_marginStart="@dimen/item_margin_left_and_right"
-//		android:gravity="center"
-//				/>
 
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ItemView, defStyleAttr, 0);
