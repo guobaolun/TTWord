@@ -1,40 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.thinkcool.circletextimageview.CircleTextImageView
-        android:id="@+id/icon_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="@dimen/item_margin_left_and_right"
-        android:gravity="center" />
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000ff0" />
 
-    <TextView
-        android:id="@+id/text_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="@dimen/item_text_margin_start"
-        android:layout_toEndOf="@+id/icon_view"
-        android:text="@string/app_name"
-        android:textSize="16sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
+        <com.thinkcool.circletextimageview.CircleTextImageView
+            android:id="@+id/icon_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/item_margin_left_and_right"
+            android:gravity="center" />
 
-        android:id="@+id/arrow_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="@dimen/item_margin_left_and_right"
-        android:drawableEnd="@drawable/ic_arrow"
-        android:drawablePadding="8dp" />
+        <TextView
+            android:id="@+id/text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/item_text_margin_start"
+            android:layout_toEndOf="@+id/icon_view"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/arrow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/item_margin_left_and_right"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:drawablePadding="8dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
 
 
-</RelativeLayout>
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000ff0" />
+
+</LinearLayout>

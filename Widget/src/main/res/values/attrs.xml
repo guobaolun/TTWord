@@ -3,17 +3,16 @@
 
 
     <declare-styleable name="CirclePercentView">
-        <attr name="pradius" format="dimension"/> <!-- 宽高 -->
-        <attr name="stripeWidth" format="dimension"/><!--色带宽度-->
-        <attr name="percent" format="integer"/><!--百分比 最大值为100-->
-        <attr name="smallColor" format="color"/><!--色带宽度-->
+        <attr name="pradius" format="dimension" /> <!-- 宽高 -->
+        <attr name="stripeWidth" format="dimension" /><!--色带宽度-->
+        <attr name="percent" format="integer" /><!--百分比 最大值为100-->
+        <attr name="smallColor" format="color" /><!--色带宽度-->
         <!--外圈颜色-->
-        <attr name="bigColor" format="color"/>
+        <attr name="bigColor" format="color" />
         <!--中间字体颜色-->
-        <attr name="centerTextSize" format="dimension"/>
+        <attr name="centerTextSize" format="dimension" />
         <!--色带宽度-->
     </declare-styleable>
-
 
 
     <declare-styleable name="CircleMusicProgressBar">
@@ -36,72 +35,66 @@
     </declare-styleable>
 
 
-
     <declare-styleable name="LGNineGrideView">
-        <attr name="space" format="dimension"/>
-        <attr name="singleImageRatio" format="float"/>
-        <attr name="singleImageWidthRatioToParent" format="float"/>
-        <attr name="singleImageRatioMode" format="integer"/>
+        <attr name="space" format="dimension" />
+        <attr name="singleImageRatio" format="float" />
+        <attr name="singleImageWidthRatioToParent" format="float" />
+        <attr name="singleImageRatioMode" format="integer" />
     </declare-styleable>
 
 
-
-
     <declare-styleable name="CircleProgressView">
-        <attr name="cpv_progressNormalColor" format="color"/>
-        <attr name="cpv_progressReachColor" format="color"/>
-        <attr name="cpv_progressTextColor" format="color"/>
-        <attr name="cpv_progressTextSize" format="dimension"/>
-        <attr name="cpv_progressTextOffset" format="dimension"/>
-        <attr name="cpv_progressNormalSize" format="dimension"/>
-        <attr name="cpv_progressReachSize" format="dimension"/>
-        <attr name="cpv_radius" format="dimension"/>
-        <attr name="cpv_progressTextVisible" format="boolean"/>
-        <attr name="cpv_progressStartArc" format="integer"/>
-        <attr name="cpv_progressTextSkewX" format="dimension"/>
-        <attr name="cpv_progressTextPrefix" format="string"/>
-        <attr name="cpv_progressTextSuffix" format="string"/>
-        <attr name="cpv_innerBackgroundColor" format="color"/>
+        <attr name="cpv_progressNormalColor" format="color" />
+        <attr name="cpv_progressReachColor" format="color" />
+        <attr name="cpv_progressTextColor" format="color" />
+        <attr name="cpv_progressTextSize" format="dimension" />
+        <attr name="cpv_progressTextOffset" format="dimension" />
+        <attr name="cpv_progressNormalSize" format="dimension" />
+        <attr name="cpv_progressReachSize" format="dimension" />
+        <attr name="cpv_radius" format="dimension" />
+        <attr name="cpv_progressTextVisible" format="boolean" />
+        <attr name="cpv_progressStartArc" format="integer" />
+        <attr name="cpv_progressTextSkewX" format="dimension" />
+        <attr name="cpv_progressTextPrefix" format="string" />
+        <attr name="cpv_progressTextSuffix" format="string" />
+        <attr name="cpv_innerBackgroundColor" format="color" />
         <attr name="cpv_progressStyle" format="enum">
-            <enum name="Normal" value="0"/>
-            <enum name="FillInner" value="1"/>
-            <enum name="FillInnerArc" value="2"/>
+            <enum name="Normal" value="0" />
+            <enum name="FillInner" value="1" />
+            <enum name="FillInnerArc" value="2" />
         </attr>
-        <attr name="cpv_innerProgressColor" format="color"/>
-        <attr name="cpv_innerPadding" format="dimension"/>
-        <attr name="cpv_outerColor" format="color"/>
-        <attr name="cpv_outerSize" format="dimension"/>
-        <attr name="cpv_reachCapRound" format="boolean"/>
+        <attr name="cpv_innerProgressColor" format="color" />
+        <attr name="cpv_innerPadding" format="dimension" />
+        <attr name="cpv_outerColor" format="color" />
+        <attr name="cpv_outerSize" format="dimension" />
+        <attr name="cpv_reachCapRound" format="boolean" />
     </declare-styleable>
 
 
     <declare-styleable name="GoogleCircleProgressView">
-        <attr name="gcp_inner_radius" format="dimension"/>
-        <attr name="gcp_background_color" format="color"/>
-        <attr name="gcp_progress_color" format="color"/>
-        <attr name="gcp_progress_stoke_width" format="dimension"/>
-        <attr name="gcp_show_arrow" format="boolean"/>
-        <attr name="gcp_enable_circle_background" format="boolean"/>
-        <attr name="gcp_arrow_width" format="dimension"/>
-        <attr name="gcp_arrow_height" format="dimension"/>
+        <attr name="gcp_inner_radius" format="dimension" />
+        <attr name="gcp_background_color" format="color" />
+        <attr name="gcp_progress_color" format="color" />
+        <attr name="gcp_progress_stoke_width" format="dimension" />
+        <attr name="gcp_show_arrow" format="boolean" />
+        <attr name="gcp_enable_circle_background" format="boolean" />
+        <attr name="gcp_arrow_width" format="dimension" />
+        <attr name="gcp_arrow_height" format="dimension" />
 
-        <attr name="gcp_progress" format="integer"/>
-        <attr name="gcp_max" format="integer"/>
+        <attr name="gcp_progress" format="integer" />
+        <attr name="gcp_max" format="integer" />
 
 
-        <attr name="gcp_progress_text_size" format="dimension"/>
-        <attr name="gcp_progress_text_color" format="color"/>
+        <attr name="gcp_progress_text_size" format="dimension" />
+        <attr name="gcp_progress_text_color" format="color" />
 
         <!--<attr name="gcp_progress_text_offset" format="dimension"/>-->
 
         <attr name="gcp_progress_text_visibility" format="enum">
-            <enum name="visible" value="0"/>
-            <enum name="invisible" value="1"/>
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
         </attr>
     </declare-styleable>
-
-
-
 
 
     <declare-styleable name="SwipeToLoadLayout">
@@ -135,39 +128,66 @@
     </declare-styleable>
 
 
-
-
     <declare-styleable name="ItemView">
-        <attr name="itemView_icon_width" format="dimension"/>
-        <attr name="itemView_icon_height" format="dimension"/>
-        <attr name="itemView_icon_marginStart" format="dimension"/>
-        <attr name="itemView_icon_text" format="string"/>
-        <attr name="itemView_icon_textColor" format="color"/>
-        <attr name="itemView_icon_textSize" format="dimension"/>
-        <attr name="itemView_icon_background" format="reference|color"/>
-        <attr name="itemView_icon_src" format="reference"/>
-        <attr name="itemView_icon_border_width" format="dimension"/>
-        <attr name="itemView_icon_border_color" format="color"/>
+
+
+        <attr name="itemView_icon_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_icon_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_icon_marginStart" format="dimension" />
+        <attr name="itemView_icon_text" format="string" />
+        <attr name="itemView_icon_textColor" format="color" />
+        <attr name="itemView_icon_textSize" format="dimension" />
+        <attr name="itemView_icon_background" format="reference|color" />
+        <attr name="itemView_icon_src" format="reference" />
+        <attr name="itemView_icon_border_width" format="dimension" />
+        <attr name="itemView_icon_border_color" format="color" />
         <attr name="itemView_icon_visibility">
             <enum name="visible" value="0" />
             <enum name="invisible" value="4" />
             <enum name="gone" value="8" />
         </attr>
 
-        <attr name="itemView_textView_textSize" format="dimension"/>
-        <attr name="itemView_textView_textColor" format="color"/>
-        <attr name="itemView_textView_text" format="string"/>
-        <attr name="itemView_textView_marginStart" format="dimension"/>
-        <attr name="itemView_textView_width" format="dimension"/>
-        <attr name="itemView_textView_height" format="dimension"/>
 
-        <attr name="itemView_arrow_height" format="dimension"/>
-        <attr name="itemView_arrow_width" format="dimension"/>
-        <attr name="itemView_arrow_marginEnd" format="dimension"/>
-        <attr name="itemView_arrow_text" format="string"/>
-        <attr name="itemView_arrow_textColor" format="color"/>
-        <attr name="itemView_arrow_textSize" format="dimension"/>
-        <attr name="itemView_arrow_src" format="reference"/>
+        <attr name="itemView_textView_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_textView_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_textView_textSize" format="dimension" />
+        <attr name="itemView_textView_textColor" format="color" />
+        <attr name="itemView_textView_text" format="string" />
+        <attr name="itemView_textView_marginStart" format="dimension" />
+
+
+
+        <attr name="itemView_arrow_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_arrow_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_arrow_marginEnd" format="dimension" />
+        <attr name="itemView_arrow_text" format="string" />
+        <attr name="itemView_arrow_textColor" format="color" />
+        <attr name="itemView_arrow_textSize" format="dimension" />
+        <attr name="itemView_arrow_src" format="reference" />
         <attr name="itemView_arrow_visibility">
             <enum name="visible" value="0" />
             <enum name="invisible" value="4" />
@@ -178,11 +198,40 @@
 
 
 
+        <attr name="itemView_topLine_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_topLine_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_topLine_marginStart" format="dimension" />
+        <attr name="itemView_topLine_marginEnd" format="dimension" />
+        <attr name="itemView_topLine_color" format="color" />
+
+
+
+        <attr name="itemView_bottomLine_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_bottomLine_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="itemView_bottomLine_marginStart" format="dimension" />
+        <attr name="itemView_bottomLine_marginEnd" format="dimension" />
+        <attr name="itemView_bottomLine_color" format="color" />
+
+
+
         <!--色带宽度-->
     </declare-styleable>
-
-
-
 
 
 </resources>
