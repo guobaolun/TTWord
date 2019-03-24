@@ -58,6 +58,7 @@ public class ItemView extends LinearLayout {
     private int bottomLineColor;
     private int bottomLineMarginStart;
     private int bottomLineMarginEnd;
+    private int height;
 
     public ItemView(Context context) {
         this(context, null);
@@ -66,17 +67,22 @@ public class ItemView extends LinearLayout {
     public ItemView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
-//
+
+    //
     public ItemView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         inflate(context, R.layout.widget_item_view, this);
 
-
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.album);
+//            int width = a.getLayoutDimension(R.styleable.album_android_layout_width, -1);
+        height = a.getLayoutDimension(R.styleable.album_android_layout_height, -2);
+        a.recycle();
 
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ItemView, defStyleAttr, 0);
-        iconWidth = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_icon_width, LayoutParams.WRAP_CONTENT);
-        iconHeight = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_icon_height, LayoutParams.WRAP_CONTENT);
+
+        iconWidth = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_icon_width, LayoutParams.WRAP_CONTENT);
+        iconHeight = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_icon_height, LayoutParams.WRAP_CONTENT);
         iconMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_icon_marginStart, getDimensionPixelSize(R.dimen.item_margin_left_and_right));
         iconText = typedArray.getString(R.styleable.ItemView_itemView_icon_text);
         iconTextColor = typedArray.getColor(R.styleable.ItemView_itemView_icon_textColor, Color.BLACK);
@@ -92,34 +98,33 @@ public class ItemView extends LinearLayout {
         textViewColor = typedArray.getColor(R.styleable.ItemView_itemView_textView_textColor, Color.BLACK);
         textViewText = typedArray.getString(R.styleable.ItemView_itemView_textView_text);
 
-        textViewMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_textView_marginStart,getDimensionPixelSize(R.dimen.item_text_margin_start));
-        textViewWidth = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_textView_width, LayoutParams.WRAP_CONTENT);
-        textViewHeight = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_textView_height, LayoutParams.WRAP_CONTENT);
+        textViewMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_textView_marginStart, getDimensionPixelSize(R.dimen.item_text_margin_start));
+        textViewWidth = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_textView_width, LayoutParams.WRAP_CONTENT);
+        textViewHeight = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_textView_height, LayoutParams.WRAP_CONTENT);
 
 
-        arrowHeight = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_arrow_height, LayoutParams.WRAP_CONTENT);
-        arrowWidth = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_arrow_width, LayoutParams.WRAP_CONTENT);
-        arrowMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_arrow_marginEnd,getDimensionPixelSize(R.dimen.item_margin_left_and_right));
+        arrowHeight = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_arrow_height, LayoutParams.WRAP_CONTENT);
+        arrowWidth = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_arrow_width, LayoutParams.WRAP_CONTENT);
+        arrowMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_arrow_marginEnd, getDimensionPixelSize(R.dimen.item_margin_left_and_right));
         arrowText = typedArray.getString(R.styleable.ItemView_itemView_arrow_text);
         arrowTextColor = typedArray.getColor(R.styleable.ItemView_itemView_arrow_textColor, Color.BLACK);
-        arrowTextSize = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_arrow_textSize,getDimensionPixelSize(R.dimen.item_view_default_text_size));
+        arrowTextSize = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_arrow_textSize, getDimensionPixelSize(R.dimen.item_view_default_text_size));
         arrowSrc = typedArray.getDrawable(R.styleable.ItemView_itemView_arrow_src);
         arrowVisibility = typedArray.getInt(R.styleable.ItemView_itemView_arrow_visibility, VISIBLE);
 
 
-        topLineHeight = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_height,getDimensionPixelSize(R.dimen.item_view_default_line_height));
-        topLineWidth = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_width, LayoutParams.MATCH_PARENT);
-        topLineColor = typedArray.getColor(R.styleable.ItemView_itemView_topLine_color, Color.BLACK);
-        topLineMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_marginStart,0);
-        topLineMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_marginEnd,0);
+        topLineHeight = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_topLine_height, getDimensionPixelSize(R.dimen.item_view_default_line_height));
+        topLineWidth = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_topLine_width, LayoutParams.MATCH_PARENT);
+        topLineColor = typedArray.getColor(R.styleable.ItemView_itemView_topLine_color, Color.WHITE);
+        topLineMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_marginStart, 0);
+        topLineMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_marginEnd, 0);
 
 
-        bottomLineHeight = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_height, getDimensionPixelSize(R.dimen.item_view_default_line_height));
-        bottomLineWidth = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_width, LayoutParams.MATCH_PARENT);
-        bottomLineColor = typedArray.getColor(R.styleable.ItemView_itemView_bottomLine_color, Color.BLACK);
-        bottomLineMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_marginStart,0);
-        bottomLineMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_marginEnd,0);
-
+        bottomLineHeight = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_bottomLine_height, getDimensionPixelSize(R.dimen.item_view_default_line_height));
+        bottomLineWidth = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_bottomLine_width, LayoutParams.MATCH_PARENT);
+        bottomLineColor = typedArray.getColor(R.styleable.ItemView_itemView_bottomLine_color, Color.WHITE);
+        bottomLineMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_marginStart, 0);
+        bottomLineMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_marginEnd, 0);
 
 
         typedArray.recycle();
@@ -167,17 +172,24 @@ public class ItemView extends LinearLayout {
         arrowTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, arrowTextSize);
         arrowTv.setVisibility(arrowVisibility);
 
-        if (arrowSrc != null){
+        if (arrowSrc != null) {
             arrowSrc.setBounds(0, 0, arrowSrc.getMinimumWidth(), arrowSrc.getMinimumHeight());
             arrowTv.setCompoundDrawables(null, null, arrowSrc, null);
         }
 
 
+        RelativeLayout itemRl = findViewById(R.id.item_rl);
+        LinearLayout.LayoutParams itemRlParams = (LinearLayout.LayoutParams) itemRl.getLayoutParams();
+        if (height == LayoutParams.MATCH_PARENT || height == LayoutParams.WRAP_CONTENT) {
+            itemRlParams.height = height;
+        } else {
+            itemRlParams.height = height - topLineHeight - bottomLineHeight;
+        }
+        itemRlParams.setMargins(0, getDimensionPixelSize(R.dimen.item_view_default_margin), 0, getDimensionPixelSize(R.dimen.item_view_default_margin));
+        itemRl.setLayoutParams(itemRlParams);
 
         View topLine = findViewById(R.id.top_line);
         topLine.setBackgroundColor(topLineColor);
-
-
         LinearLayout.LayoutParams topLineParams = (LinearLayout.LayoutParams) topLine.getLayoutParams();
         topLineParams.height = topLineHeight;
         topLineParams.width = topLineWidth;
@@ -186,17 +198,26 @@ public class ItemView extends LinearLayout {
         topLine.setLayoutParams(topLineParams);
 
         View bottomLine = findViewById(R.id.bottom_line);
+        bottomLine.setBackgroundColor(bottomLineColor);
         LinearLayout.LayoutParams bottomLineParams = (LinearLayout.LayoutParams) bottomLine.getLayoutParams();
-        bottomLineParams.height = topLineHeight;
-        bottomLineParams.width = topLineWidth;
-        bottomLineParams.setMarginStart(topLineMarginStart);
-        bottomLineParams.setMarginEnd(topLineMarginEnd);
-        bottomLine.setLayoutParams(topLineParams);
+        bottomLineParams.height = bottomLineHeight;
+        bottomLineParams.width = bottomLineWidth;
+
+        if (height == LayoutParams.MATCH_PARENT) {
+            bottomLineParams.setMargins(0, -(bottomLineHeight + topLineHeight), 0, 0);
+        }
+        bottomLineParams.setMarginStart(bottomLineMarginStart);
+        bottomLineParams.setMarginEnd(bottomLineMarginEnd);
+        bottomLine.setLayoutParams(bottomLineParams);
+
+
+        setClickable(true);
+        setFocusable(true);
 
 
     }
 
-    private int getDimensionPixelSize(@DimenRes int id){
+    private int getDimensionPixelSize(@DimenRes int id) {
         return getResources().getDimensionPixelSize(id);
     }
 

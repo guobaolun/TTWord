@@ -228,10 +228,13 @@
         <attr name="itemView_bottomLine_marginEnd" format="dimension" />
         <attr name="itemView_bottomLine_color" format="color" />
 
-
-
-        <!--色带宽度-->
     </declare-styleable>
 
+
+
+    <declare-styleable name="album">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+    </declare-styleable>
 
 </resources>

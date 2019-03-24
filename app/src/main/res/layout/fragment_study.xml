@@ -12,6 +12,7 @@
 
         <TextView
             android:text="学习"
+
             android:textSize="@dimen/top_title_text_size"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
@@ -20,6 +21,20 @@
 
 
     </RelativeLayout>
+
+
+    <com.snowy.widget.ItemView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_fragment_word_item"
+        app:itemView_icon_src="@drawable/ic_phonetic"
+        app:itemView_textView_text="音标"
+        app:itemView_textView_textColor="@drawable/selector_fragment_word_item_text" />
+
+
+
 
 
 </LinearLayout>

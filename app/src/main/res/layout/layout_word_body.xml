@@ -7,6 +7,8 @@
     android:orientation="vertical"
     android:scrollbars="none">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -244,8 +246,8 @@
 
             <ImageView
                 android:id="@+id/icon_phonetic"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/item_margin_left_and_right"
                 android:src="@drawable/ic_phonetic" />
@@ -420,7 +422,6 @@
                 android:layout_marginEnd="@dimen/item_margin_left_and_right"
                 android:src="@drawable/ic_arrow" />
 
-
         </RelativeLayout>
 
 
@@ -428,61 +429,64 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_fragment_word_item"
-            android:clickable="true"
-            android:focusable="true"
-
-            app:itemView_arrow_height="40dp"
-            app:itemView_arrow_marginEnd="40dp"
-            app:itemView_arrow_src="@drawable/ic_phonetic"
-            app:itemView_arrow_text="哈哈"
-            app:itemView_arrow_textColor="#ff00ff"
-            app:itemView_arrow_textSize="@dimen/item_text_size"
-            app:itemView_arrow_visibility="visible"
-            app:itemView_arrow_width="80dp"
-
-            app:itemView_icon_background="#00ff00"
-            app:itemView_icon_border_color="#ff0f00"
-            app:itemView_icon_border_width="2dp"
-            app:itemView_icon_height="30dp"
-            app:itemView_icon_marginStart="40dp"
-
-
             app:itemView_icon_src="@drawable/ic_phonetic"
-            app:itemView_icon_text="哈哈"
-            app:itemView_icon_textColor="#0000ff"
-            app:itemView_icon_textSize="@dimen/item_text_size"
-
-            app:itemView_icon_visibility="visible"
-            app:itemView_icon_width="50dp"
-            app:itemView_textView_height="140dp"
-            app:itemView_textView_marginStart="40dp"
-
-            app:itemView_textView_text="哈哈"
-            app:itemView_textView_textColor="@drawable/selector_fragment_word_item_text"
-            app:itemView_textView_textSize="@dimen/item_text_size"
-            app:itemView_textView_width="130dp"
-
-            app:itemView_topLine_color="#F0000f"
-            app:itemView_topLine_height="10dp"
-            app:itemView_topLine_marginEnd="10dp"
-            app:itemView_topLine_marginStart="10dp"
-            app:itemView_topLine_width="100dp"
-
-            app:itemView_bottomLine_color="#405ff2"
-            app:itemView_bottomLine_height="0.8dp"
-            app:itemView_bottomLine_marginStart="10dp"
-            app:itemView_bottomLine_marginEnd="10dp"
-            app:itemView_bottomLine_width="match_parent"
-            />
+            app:itemView_textView_text="音标"
+            app:itemView_textView_textColor="@drawable/selector_fragment_word_item_text" />
 
 
+        <!--<com.snowy.widget.ItemView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/selector_fragment_word_item"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"-->
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/theme_bg" />
+        <!--app:itemView_arrow_height="40dp"-->
+        <!--app:itemView_arrow_marginEnd="40dp"-->
+        <!--app:itemView_arrow_src="@drawable/ic_phonetic"-->
+        <!--app:itemView_arrow_text="哈哈"-->
+        <!--app:itemView_arrow_textColor="#ff00ff"-->
+        <!--app:itemView_arrow_textSize="@dimen/item_text_size"-->
+        <!--app:itemView_arrow_visibility="visible"-->
+        <!--app:itemView_arrow_width="80dp"-->
 
+        <!--app:itemView_icon_background="#00ff00"-->
+        <!--app:itemView_icon_border_color="#ff0f00"-->
+        <!--app:itemView_icon_border_width="2dp"-->
+        <!--app:itemView_icon_height="30dp"-->
+        <!--app:itemView_icon_marginStart="40dp"-->
+
+
+        <!--app:itemView_icon_src="@drawable/ic_phonetic"-->
+        <!--app:itemView_icon_text="哈哈"-->
+        <!--app:itemView_icon_textColor="#0000ff"-->
+        <!--app:itemView_icon_textSize="@dimen/item_text_size"-->
+
+        <!--app:itemView_icon_visibility="visible"-->
+        <!--app:itemView_icon_width="50dp"-->
+
+        <!--app:itemView_textView_height="140dp"-->
+        <!--app:itemView_textView_marginStart="40dp"-->
+
+        <!--app:itemView_textView_text="哈哈"-->
+        <!--app:itemView_textView_textColor="@drawable/selector_fragment_word_item_text"-->
+        <!--app:itemView_textView_textSize="@dimen/item_text_size"-->
+        <!--app:itemView_textView_width="130dp"-->
+
+        <!--app:itemView_topLine_color="#F0000f"-->
+        <!--app:itemView_topLine_height="10dp"-->
+        <!--app:itemView_topLine_marginEnd="10dp"-->
+        <!--app:itemView_topLine_marginStart="10dp"-->
+        <!--app:itemView_topLine_width="100dp"-->
+
+        <!--app:itemView_bottomLine_color="#405ff2"-->
+        <!--app:itemView_bottomLine_height="0.8dp"-->
+        <!--app:itemView_bottomLine_marginStart="10dp"-->
+        <!--app:itemView_bottomLine_marginEnd="10dp"-->
+        <!--app:itemView_bottomLine_width="match_parent"-->
+        <!--/>-->
 
     </LinearLayout>
+
 
 </ScrollView>
