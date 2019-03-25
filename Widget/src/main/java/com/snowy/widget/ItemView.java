@@ -115,14 +115,14 @@ public class ItemView extends LinearLayout {
 
         topLineHeight = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_topLine_height, getDimensionPixelSize(R.dimen.item_view_default_line_height));
         topLineWidth = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_topLine_width, LayoutParams.MATCH_PARENT);
-        topLineColor = typedArray.getColor(R.styleable.ItemView_itemView_topLine_color, Color.WHITE);
+        topLineColor = typedArray.getColor(R.styleable.ItemView_itemView_topLine_color, Color.TRANSPARENT);
         topLineMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_marginStart, 0);
         topLineMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_topLine_marginEnd, 0);
 
 
         bottomLineHeight = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_bottomLine_height, getDimensionPixelSize(R.dimen.item_view_default_line_height));
         bottomLineWidth = typedArray.getLayoutDimension(R.styleable.ItemView_itemView_bottomLine_width, LayoutParams.MATCH_PARENT);
-        bottomLineColor = typedArray.getColor(R.styleable.ItemView_itemView_bottomLine_color, Color.WHITE);
+        bottomLineColor = typedArray.getColor(R.styleable.ItemView_itemView_bottomLine_color, Color.TRANSPARENT);
         bottomLineMarginStart = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_marginStart, 0);
         bottomLineMarginEnd = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_bottomLine_marginEnd, 0);
 

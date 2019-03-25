@@ -8,6 +8,9 @@
     <color name="theme_item_bg">#ffffff</color>
 
 
+    <color name="item_bg">#F7F7FB</color>
+
+
 
     <!--<color name="index_menu_bg">#172941</color>-->
     <!--<color name="theme_bg">#081724</color>-->

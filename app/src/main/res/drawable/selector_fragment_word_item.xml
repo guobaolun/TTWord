@@ -7,7 +7,7 @@
     <item android:state_pressed="true">
         <shape>
             <!-- 背景颜色 -->
-            <solid android:color="#00ff00" />
+            <solid android:color="@color/item_bg" />
         </shape>
     </item>
 
