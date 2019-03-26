@@ -12,9 +12,7 @@
 
 
 
-    <!--<color name="index_menu_bg">#172941</color>-->
-    <!--<color name="theme_bg">#081724</color>-->
-    <!--<color name="theme_item_bg">#131E30</color>-->
+
 
     <color name="fragment_word_item_text_pressed">#701F3F59</color>
     <color name="fragment_word_item_text_normal">#1F3F59</color>
@@ -25,8 +23,6 @@
     <!-- 底部菜单字体 -->
     <color name="index_menu_text_normal">#6D87A8</color>
     <color name="index_menu_text_pressed">#1C87D9</color>
-
-
 
 
 </resources>

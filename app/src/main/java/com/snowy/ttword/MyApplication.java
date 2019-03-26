@@ -10,17 +10,16 @@ import com.snowy.common.utils.CacheUtils;
 public class MyApplication extends BaseApplication {
 
 
-    public static final String SP_KEY_THEME_MODE = "themeMode";
+    public static final String SP_KEY_THEME_MODE = "ThemeMode";
 
     @Override
     public void onCreate() {
         super.onCreate();
         CrashHandler.getInstance().init(this);
 
-       int mode = CacheUtils.getInstance(getApplicationContext()).getInt(SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_NO);
-//       int mode = CacheUtils.getInstance(getApplicationContext()).getInt(SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_YES);
+//       int mode = CacheUtils.getInstance(getApplicationContext()).getInt(SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_NO);
+       int mode = CacheUtils.getInstance(getApplicationContext()).getInt(SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_YES);
         AppCompatDelegate.setDefaultNightMode(mode);
-//        AppCompatDelegate.setDefaultNightMode(isNight ?AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO);
     }
 
 

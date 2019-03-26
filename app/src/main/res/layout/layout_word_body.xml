@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fadingEdge="none"
     android:orientation="vertical"
+    android:overScrollMode="never"
     android:scrollbars="none">
 
 
@@ -16,7 +18,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/item_line_height"
             android:background="@color/theme_bg" />
 
         <LinearLayout
@@ -50,7 +52,7 @@
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/item_line_height"
                 android:layout_height="match_parent"
                 android:background="@color/theme_bg" />
 
@@ -81,7 +83,7 @@
 
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/item_line_height"
                 android:layout_height="match_parent"
                 android:background="@color/theme_bg" />
 
@@ -114,7 +116,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/item_line_height"
             android:background="@color/theme_bg" />
 
         <LinearLayout
@@ -148,7 +150,7 @@
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/item_line_height"
                 android:layout_height="match_parent"
                 android:background="@color/theme_bg" />
 
@@ -178,8 +180,9 @@
 
             </LinearLayout>
 
+
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/item_line_height"
                 android:layout_height="match_parent"
                 android:background="@color/theme_bg" />
 
@@ -211,29 +214,35 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/item_line_height"
             android:background="@color/theme_bg" />
 
 
-        <Button
-            android:id="@+id/recite_bt"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="45dp"
-            android:background="@drawable/selector_fragment_word_start_bt"
-            android:gravity="center"
-            android:paddingStart="45dp"
-            android:paddingEnd="45dp"
-            android:text="开始背单词"
-            android:textColor="@drawable/selector_fragment_word_item_text"
-            android:textSize="15dp" />
+        <RelativeLayout
+            android:background="@color/theme_item_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/recite_bt"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="45dp"
+                android:background="@drawable/selector_fragment_word_start_bt"
+                android:gravity="center"
+                android:text="开始背单词"
+                android:textColor="@drawable/selector_fragment_word_item_text"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
 
 
         <com.snowy.widget.ItemView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="@dimen/item_line_height"
             android:background="@drawable/selector_fragment_word_item"
             app:itemView_icon_src="@drawable/ic_phonetic"
             app:itemView_textView_text="音标"
@@ -243,7 +252,7 @@
         <com.snowy.widget.ItemView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="@dimen/item_line_height"
             android:background="@drawable/selector_fragment_word_item"
             app:itemView_icon_src="@drawable/ic_phonetic"
             app:itemView_textView_text="已忽略单词"
@@ -253,7 +262,7 @@
         <com.snowy.widget.ItemView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="@dimen/item_line_height"
             android:background="@drawable/selector_fragment_word_item"
             app:itemView_icon_src="@drawable/ic_phonetic"
             app:itemView_textView_text="添加单词"
@@ -261,9 +270,10 @@
 
 
         <com.snowy.widget.ItemView
+            android:layout_marginBottom="@dimen/item_line_height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="@dimen/item_line_height"
             android:background="@drawable/selector_fragment_word_item"
             app:itemView_icon_src="@drawable/ic_phonetic"
             app:itemView_textView_text="学习设置"

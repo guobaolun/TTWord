@@ -8,11 +8,11 @@
     <dimen name="item_text_size">14dp</dimen>
 
     <dimen name="item_text_margin_icon">10dp</dimen>
-    <dimen name="item_line_height">0.8dp</dimen>
+    <dimen name="item_line_height">1.2dp</dimen>
 
 
     <dimen name="login_icon_size">36dp</dimen>
-    <dimen name="login_icon_pading">10dp</dimen>
+    <dimen name="login_icon_padding">10dp</dimen>
 
 
     <dimen name="phonetic_list_text">14dp</dimen>

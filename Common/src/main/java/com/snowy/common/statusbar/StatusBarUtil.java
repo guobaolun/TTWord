@@ -139,18 +139,16 @@ public class StatusBarUtil {
     public static boolean setCommonUI(Activity activity, boolean dark) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             View decorView = activity.getWindow().getDecorView();
-            if (decorView != null) {
-                int vis = decorView.getSystemUiVisibility();
-                if (dark) {
-                    vis |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
-                } else {
-                    vis &= ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
-                }
-                if (decorView.getSystemUiVisibility() != vis) {
-                    decorView.setSystemUiVisibility(vis);
-                }
-                return true;
+            int vis = decorView.getSystemUiVisibility();
+            if (dark) {
+                vis |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+            } else {
+                vis &= ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
             }
+            if (decorView.getSystemUiVisibility() != vis) {
+                decorView.setSystemUiVisibility(vis);
+            }
+            return true;
         }
         return false;
 
