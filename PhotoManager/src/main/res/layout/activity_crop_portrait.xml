@@ -12,6 +12,7 @@
         android:layout_height="@dimen/top_height"
         android:background="@color/theme_bg_b">
 
+         <!--TODO-->
         <ImageButton
             android:id="@+id/back_ib"
             android:layout_width="50dp"
@@ -24,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="裁剪图片"
-            android:textColor="@color/title_text"
+            android:textColor="#00ff00"
             android:textSize="@dimen/top_title_text_size" />
 
 

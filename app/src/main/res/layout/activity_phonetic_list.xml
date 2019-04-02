@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/theme_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="音标"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/top_title_text_size" />
+
+            <ImageButton
+                android:id="@+id/back_ib"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/selector_back" />
+
+
+            <ImageButton
+                android:id="@+id/loudspeaker_ib"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#7DBD47"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+        <ScrollView
+        android:background="@color/theme_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/vowel_tv"
+                    style="@style/PhoneticTitleText"
+                    android:layout_height="wrap_content"
+                    android:text="元音" />
+
+
+                <LinearLayout
+                    android:id="@+id/vowel_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="2"
+                                android:text="单\n元\n音" />
+
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="3"
+                                android:text="双\n元\n音" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="1"
+                                android:text="前元音" />
+
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="1"
+                                android:text="中元音" />
+
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="1"
+                                android:text="后元音" />
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="1"
+                                android:text="开合双元音" />
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="1"
+                                android:text="集中双元音" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <com.snowy.widget.FollowGridView
+                        android:id="@+id/vowel_gridview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/phonetic_list_bt_margin"
+                        android:layout_marginRight="@dimen/phonetic_list_bt_margin"
+                        android:layout_weight="5"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="0dp"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:verticalSpacing="0dp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/consonant_tv"
+                    style="@style/PhoneticTitleText"
+                    android:layout_height="wrap_content"
+                    android:text="辅音" />
+
+
+                <LinearLayout
+                    android:id="@+id/consonant_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="2"
+                                    android:text="爆\n破\n音" />
+
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="2"
+                                    android:text="摩\n擦\n音" />
+
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="2"
+                                    android:text="破\n擦\n音" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="1"
+                                    android:text="清辅音" />
+
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="1"
+                                    android:text="浊辅音" />
+
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="1"
+                                    android:text="清辅音" />
+
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="1"
+                                    android:text="浊辅音" />
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="1"
+                                    android:text="清辅音" />
+
+
+                                <TextView
+                                    style="@style/PhoneticListText"
+                                    android:layout_weight="1"
+                                    android:text="浊辅音" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:text="鼻音 (浊辅音)" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="1"
+                                android:text="舌侧音(浊辅音)" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/PhoneticListText"
+                                android:layout_weight="1"
+                                android:text="半元音(浊辅音)" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <com.snowy.widget.FollowGridView
+                        android:id="@+id/consonant_gridview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/phonetic_list_bt_margin"
+                        android:layout_marginRight="@dimen/phonetic_list_bt_margin"
+                        android:layout_weight="5"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="0dp"
+                        android:horizontalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:verticalSpacing="0dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

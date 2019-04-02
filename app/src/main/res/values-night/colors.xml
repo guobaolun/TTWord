@@ -7,7 +7,7 @@
 
     <color name="item_bg">#172841</color>
 
-
+    <color name="title_text">#6D87A8</color>
 
     <color name="fragment_word_item_text_pressed">#90FFFFFF</color>
     <color name="fragment_word_item_text_normal">#ffffff</color>

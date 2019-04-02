@@ -206,6 +206,7 @@ public class SelectManyPhotoActivity extends BaseActivity implements View.OnClic
         }
 
 
+        //TODO
         HandlerThread handlerThread = new HandlerThread("HandlerThread");
         handlerThread.start();
         mHandler.post(new Runnable() {

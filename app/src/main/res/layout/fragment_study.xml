@@ -12,7 +12,6 @@
 
         <TextView
             android:text="学习"
-
             android:textSize="@dimen/top_title_text_size"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"

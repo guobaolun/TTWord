@@ -60,7 +60,7 @@ public class CropPortraitActivity extends BaseActivity implements View.OnClickLi
         okBt.setOnClickListener(this);
 
 
-        mUCropView = findViewById(com.yalantis.ucrop.R.id.ucrop);
+        mUCropView = findViewById(R.id.ucrop);
         mGestureCropImageView = mUCropView.getCropImageView();
         mOverlayView = mUCropView.getOverlayView();
 
