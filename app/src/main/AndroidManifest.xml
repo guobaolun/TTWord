@@ -51,6 +51,11 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".activity.PhoneticListActivity"
+            android:screenOrientation="portrait" />
+
+
     </application>
 
 </manifest>

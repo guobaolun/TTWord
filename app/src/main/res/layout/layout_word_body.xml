@@ -240,6 +240,7 @@
 
 
         <com.snowy.widget.ItemView
+            android:id="@+id/phonetic_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/item_line_height"

@@ -1,5 +1,6 @@
 package com.snowy.ttword.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -14,6 +15,8 @@ import android.widget.TextView;
 import com.aspsine.swipetoloadlayout.SwipeToLoadLayout;
 import com.snowy.common.utils.ScreenUtils;
 import com.snowy.ttword.R;
+import com.snowy.ttword.activity.PhoneticListActivity;
+import com.snowy.widget.ItemView;
 
 /**
  * @author guobaolun
@@ -44,6 +47,9 @@ public class WordFragment extends Fragment implements View.OnClickListener {
 
     private void initView(View view) {
 
+//        phonetic_item
+        ItemView phoneticItem = view.findViewById(R.id.phonetic_item);
+        phoneticItem.setOnClickListener(this);
 //        RelativeLayout phoneticLl = view.findViewById(R.id.phonetic_ll);
 //        phoneticLl.setOnClickListener(this);
 //
@@ -130,5 +136,12 @@ public class WordFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
+        switch (v.getId()){
+            case R.id.phonetic_item:
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), PhoneticListActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 }
