@@ -2,16 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@drawable/aaaa"
     android:orientation="vertical">
 
 
-    <!--<TextView-->
     <com.snowy.widget.ClickButton
         android:id="@+id/phonetic_bt"
         style="@style/PhoneticListGridItemText"
         android:layout_marginBottom="@dimen/phonetic_list_bt_margin"
         android:layout_marginTop="@dimen/phonetic_list_bt_margin"
         android:textAllCaps="false" />
+
+
+
+
+
 
 </LinearLayout>
 

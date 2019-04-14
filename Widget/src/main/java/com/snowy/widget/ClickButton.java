@@ -114,10 +114,6 @@ public class ClickButton extends android.support.v7.widget.AppCompatButton {
          void onClick(View view);
     }
 
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-    }
 
 
 }

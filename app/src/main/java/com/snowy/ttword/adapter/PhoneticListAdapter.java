@@ -24,11 +24,11 @@ public class PhoneticListAdapter extends BaseAdapter {
     private Context context;
     private int height;
 
-    public PhoneticListAdapter(Context context, String[] phoneticArr) {
+    public PhoneticListAdapter(Context context, String[] phoneticArr,int height) {
         this.phoneticArr = phoneticArr;
         this.context = context;
 
-        height = (ScreenUtils.getScreenWidth(context) - 6) / 8;
+        this.height = height;
     }
 
     @Override
