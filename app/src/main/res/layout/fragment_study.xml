@@ -20,9 +20,15 @@
 
 
     </RelativeLayout>
+    <Button
+        android:text="11111"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
     <com.snowy.widget.ItemView
+        android:id="@+id/item_view"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_marginBottom="100dp"
         android:layout_width="match_parent"
