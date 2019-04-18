@@ -2,8 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="#ff0000"
     android:orientation="vertical">
+
+
+    <Button
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:background="#5f00ff"
+        android:padding="15dp"
+        android:text="退出"
+        android:textColor="@android:color/holo_red_light" />
+
+    <Button
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:background="#ff00ff"
+        android:padding="15dp"
+        android:text="退出"
+        android:textColor="@android:color/holo_red_light" />
+
+
+    <Button
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_fragment_word_item"
+        android:padding="15dp"
+        android:text="退出"
+        android:textColor="@android:color/holo_red_light" />
+
+
+
+
+
 
     <Button
         android:id="@+id/logout_bt"
@@ -20,7 +51,7 @@
         style="@style/Button"
         android:layout_width="match_parent"
         android:layout_marginTop="1dp"
-        android:background="@drawable/selector_fragment_word_item"
+        android:background="#ff00ff"
         android:padding="15dp"
         android:text="取消"
         android:textColor="@color/text_color" />

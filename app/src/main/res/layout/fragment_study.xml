@@ -20,23 +20,26 @@
 
 
     </RelativeLayout>
-    <Button
-        android:text="11111"
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
-    <com.snowy.widget.ItemView
-        android:id="@+id/item_view"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_marginBottom="100dp"
+    <RelativeLayout
+        android:background="#ffffff"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/selector_fragment_word_item"
-        app:itemView_icon_src="@drawable/ic_phonetic"
-        app:itemView_textView_text="音标"
-        app:itemView_textView_textColor="@drawable/selector_fragment_word_item_text" />
+        android:layout_height="match_parent">
+
+
+        <Button
+
+            android:id="@+id/button"
+            style="@style/Button"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="#5f00ff"
+            android:padding="15dp"
+            android:text="退出"
+            android:textColor="@android:color/holo_red_light" />
+
+
+    </RelativeLayout>
 
 
 

@@ -37,7 +37,8 @@ public class IndexActivity extends BaseActivity {
 
     private Class<?>[] fragmentArray = {
             WordFragment.class,
-            WordBookFragment.class,
+            MeFragment.class,
+//            WordBookFragment.class,
             MeFragment.class
     };
 
