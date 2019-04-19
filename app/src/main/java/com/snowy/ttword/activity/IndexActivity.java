@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.snowy.common.activity.BaseActivity;
 import com.snowy.ttword.MyApplication;
 import com.snowy.ttword.R;
+import com.snowy.ttword.fragment.EmptyFragment;
 import com.snowy.ttword.fragment.MeFragment;
 import com.snowy.ttword.fragment.WordBookFragment;
 import com.snowy.ttword.fragment.WordFragment;
@@ -37,7 +38,7 @@ public class IndexActivity extends BaseActivity {
 
     private Class<?>[] fragmentArray = {
             WordFragment.class,
-            MeFragment.class,
+            EmptyFragment.class,
 //            WordBookFragment.class,
             MeFragment.class
     };

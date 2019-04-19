@@ -25,7 +25,6 @@
                 android:text="音标"
                 android:textColor="@color/title_text"
                 android:textSize="@dimen/top_title_text_size" />
-
             <ImageButton
                 android:id="@+id/back_ib"
                 android:layout_width="50dp"
@@ -317,6 +316,17 @@
 
 
             </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
 
 
         </LinearLayout>

@@ -84,10 +84,10 @@ public class PhoneticListActivity extends BaseActivity implements View.OnClickLi
 
 
         GridView vowelGridView = findViewById(R.id.vowel_gridview);
-        vowelGridView.setAdapter(new PhoneticListAdapter(getApplicationContext(), VOWEL_ARR,itemHeight));
+        vowelGridView.setAdapter(new PhoneticListAdapter(this, VOWEL_ARR,itemHeight));
 
         GridView consonantGridview = findViewById(R.id.consonant_gridview);
-        consonantGridview.setAdapter(new PhoneticListAdapter(getApplicationContext(), CONSONANT_ARR,itemHeight));
+        consonantGridview.setAdapter(new PhoneticListAdapter(this, CONSONANT_ARR,itemHeight));
 
     }
 
