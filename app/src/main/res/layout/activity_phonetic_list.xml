@@ -27,10 +27,10 @@
                 android:textSize="@dimen/top_title_text_size" />
             <ImageButton
                 android:id="@+id/back_ib"
-                android:layout_width="50dp"
+                android:layout_width="@dimen/top_height"
                 android:layout_height="match_parent"
                 android:background="#00000000"
-                android:src="@drawable/selector_back" />
+                android:src="@drawable/selector_back_bt" />
 
 
             <ImageButton

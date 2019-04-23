@@ -20,27 +20,6 @@
 
 
     </RelativeLayout>
-    <RelativeLayout
-        android:visibility="gone"
-        android:background="#ffffff"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <Button
-
-            android:id="@+id/button"
-            style="@style/Button"
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_marginTop="1dp"
-            android:background="#5f00ff"
-            android:padding="15dp"
-            android:text="退出"
-            android:textColor="@android:color/holo_red_light" />
-
-
-    </RelativeLayout>
 
 
 
