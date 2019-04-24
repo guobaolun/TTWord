@@ -18,4 +18,8 @@
     <dimen name="phonetic_list_text">14dp</dimen>
     <dimen name="phonetic_list_bt_margin">1dp</dimen>
 
+
+    <dimen name="title_ic_size">25dp</dimen>
+
+
 </resources>

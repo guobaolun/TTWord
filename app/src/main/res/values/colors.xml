@@ -9,9 +9,8 @@
 
 
     <color name="item_bg">#F7F7FB</color>
-    <color name="title_text">#CFD3E9</color>
     <color name="text_color">#CFD3E9</color>
-
+    <color name="text_pressed_color">#CFD3E9</color>
 
     <color name="fragment_word_item_text_pressed">#701F3F59</color>
     <color name="fragment_word_item_text_normal">#1F3F59</color>

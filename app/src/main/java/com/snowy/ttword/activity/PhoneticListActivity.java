@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -43,6 +44,7 @@ public class PhoneticListActivity extends BaseActivity implements View.OnClickLi
             "l", "", "", "", "",
             "w", "j", "", "", "",
     };
+    private ImageButton voiceIb;
 
 
     @Override
@@ -84,16 +86,30 @@ public class PhoneticListActivity extends BaseActivity implements View.OnClickLi
 
 
         GridView vowelGridView = findViewById(R.id.vowel_gridview);
-        vowelGridView.setAdapter(new PhoneticListAdapter(this, VOWEL_ARR,itemHeight));
+        vowelGridView.setAdapter(new PhoneticListAdapter(this, VOWEL_ARR, itemHeight));
 
-        GridView consonantGridview = findViewById(R.id.consonant_gridview);
-        consonantGridview.setAdapter(new PhoneticListAdapter(this, CONSONANT_ARR,itemHeight));
+        GridView consonantGridView = findViewById(R.id.consonant_gridview);
+        consonantGridView.setAdapter(new PhoneticListAdapter(this, CONSONANT_ARR, itemHeight));
 
+        ImageButton backBb = findViewById(R.id.back_ib);
+        backBb.setOnClickListener(this);
+
+        voiceIb = findViewById(R.id.voice_ib);
+        voiceIb.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-
+        switch (v.getId()) {
+            case R.id.back_ib:
+                finish();
+                break;
+            case R.id.voice_ib:
+                voiceIb.setSelected(!voiceIb.isSelected());
+                break;
+            default:
+                break;
+        }
     }
 
 
