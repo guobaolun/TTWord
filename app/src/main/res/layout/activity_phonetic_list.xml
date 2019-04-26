@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="音标"
-                android:textColor="@color/text_color"
+                android:textColor="@color/fragment_word_item_text_normal"
                 android:textSize="@dimen/top_title_text_size" />
 
             <ImageButton
