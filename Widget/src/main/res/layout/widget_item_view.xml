@@ -43,7 +43,6 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/item_margin_left_and_right"
-            android:drawableEnd="@drawable/ic_arrow"
             android:drawablePadding="8dp"
             android:gravity="center" />
 

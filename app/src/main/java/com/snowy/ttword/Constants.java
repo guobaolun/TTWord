@@ -7,4 +7,10 @@ package com.snowy.ttword;
 
 
 public interface Constants {
+
+
+    public static final String SP_KEY_THEME_MODE = "ThemeMode";
+    public static final String SP_KEY_PHONETIC_LIST_VOICE = "PhoneticListVoice";
+
+
 }

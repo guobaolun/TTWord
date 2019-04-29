@@ -55,6 +55,10 @@
             android:name=".activity.PhoneticListActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".activity.PhoneticDetailsActivity"
+            android:screenOrientation="portrait" />
+
 
     </application>
 

@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.snowy.common.BaseApplication;
 import com.snowy.common.manager.PermissionManager;
 import com.snowy.common.statusbar.StatusBarUtil;
-import com.snowy.common.utils.CacheUtils;
 
 public abstract class BaseActivity extends AppCompatActivity {
 

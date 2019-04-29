@@ -3,9 +3,13 @@ package com.snowy.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.LightingColorFilter;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DimenRes;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
@@ -47,6 +51,7 @@ public class ItemView extends LinearLayout {
     private int arrowTextColor;
     private int arrowTextSize;
     private Drawable arrowSrc;
+    private int arrowSrcColor;
     private int arrowVisibility;
     private int topLineHeight;
     private int topLineWidth;
@@ -110,6 +115,7 @@ public class ItemView extends LinearLayout {
         arrowTextColor = typedArray.getColor(R.styleable.ItemView_itemView_arrow_textColor, Color.BLACK);
         arrowTextSize = typedArray.getDimensionPixelSize(R.styleable.ItemView_itemView_arrow_textSize, getDimensionPixelSize(R.dimen.item_view_default_text_size));
         arrowSrc = typedArray.getDrawable(R.styleable.ItemView_itemView_arrow_src);
+        arrowSrcColor = typedArray.getColor(R.styleable.ItemView_itemView_arrow_srcColor, Color.GRAY);
         arrowVisibility = typedArray.getInt(R.styleable.ItemView_itemView_arrow_visibility, VISIBLE);
 
 
@@ -155,9 +161,7 @@ public class ItemView extends LinearLayout {
         textTvParams.width = textViewWidth;
         textTvParams.setMarginStart(textViewMarginStart);
         textTv.setLayoutParams(textTvParams);
-
         textTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, textViewTextSize);
-
         textTv.setTextColor(textViewColor);
         textTv.setText(textViewText);
 
@@ -172,11 +176,18 @@ public class ItemView extends LinearLayout {
         arrowTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, arrowTextSize);
         arrowTv.setVisibility(arrowVisibility);
 
+
+        Drawable drawable = getResources().getDrawable(R.drawable.ic_fore);
+        drawable.setColorFilter(new PorterDuffColorFilter(arrowSrcColor, PorterDuff.Mode.SRC_IN));
+
+
+        drawable.setBounds(0,0,drawable.getMinimumWidth(),drawable.getMinimumHeight());
+        arrowTv.setCompoundDrawables(null, null, drawable, null);
+
         if (arrowSrc != null) {
             arrowSrc.setBounds(0, 0, arrowSrc.getMinimumWidth(), arrowSrc.getMinimumHeight());
             arrowTv.setCompoundDrawables(null, null, arrowSrc, null);
         }
-
 
         RelativeLayout itemRl = findViewById(R.id.item_rl);
         LinearLayout.LayoutParams itemRlParams = (LinearLayout.LayoutParams) itemRl.getLayoutParams();
@@ -209,12 +220,8 @@ public class ItemView extends LinearLayout {
         bottomLineParams.setMarginStart(bottomLineMarginStart);
         bottomLineParams.setMarginEnd(bottomLineMarginEnd);
         bottomLine.setLayoutParams(bottomLineParams);
-
-
         setClickable(true);
         setFocusable(true);
-
-
     }
 
     private int getDimensionPixelSize(@DimenRes int id) {

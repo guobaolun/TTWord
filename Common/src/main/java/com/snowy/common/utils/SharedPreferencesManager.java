@@ -8,7 +8,7 @@ import com.alibaba.fastjson.JSON;
 import java.util.List;
 
 
-public class CacheUtils {
+public class SharedPreferencesManager {
 
 
     public static final long MINUTE = 1000 * 60;
@@ -22,6 +22,10 @@ public class CacheUtils {
      */
     private static final String SP_NAME = "sp_name";
 
+
+
+
+
     public static final String TIME = "Time";
 //    public static final String SP_KEY_LOGIN_DATA = "loginInfo";
 //    public static final String SP_KEY_ENGLISH_CIRCLE_DATA = "englishCircle";
@@ -34,15 +38,15 @@ public class CacheUtils {
 
     private static SharedPreferences sp;
 
-    private static CacheUtils single;
+    private static SharedPreferencesManager single;
 
-    private CacheUtils(Context context) {
+    private SharedPreferencesManager(Context context) {
         sp = context.getSharedPreferences(SP_NAME, Context.MODE_PRIVATE);
     }
 
-    public static CacheUtils getInstance(Context context) {
+    public static SharedPreferencesManager getInstance(Context context) {
         if(single == null){
-            single = new CacheUtils(context);
+            single = new SharedPreferencesManager(context);
         }
         return single;
     }
@@ -158,7 +162,7 @@ public class CacheUtils {
 //     */
 //    public static boolean isOverdue(Context context, String key) {
 //        long saveTime = getSaveTime(context, key);
-//        return System.currentTimeMillis() - saveTime > CacheUtils.HOUR * CACHE_TIME;
+//        return System.currentTimeMillis() - saveTime > SharedPreferencesManager.HOUR * CACHE_TIME;
 //    }
 //
 

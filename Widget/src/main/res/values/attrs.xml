@@ -186,7 +186,11 @@
         <attr name="itemView_arrow_marginEnd" format="dimension" />
         <attr name="itemView_arrow_text" format="string" />
         <attr name="itemView_arrow_textColor" format="color" />
+
         <attr name="itemView_arrow_textSize" format="dimension" />
+
+        <attr name="itemView_arrow_srcColor" format="color" />
+
         <attr name="itemView_arrow_src" format="reference" />
         <attr name="itemView_arrow_visibility">
             <enum name="visible" value="0" />

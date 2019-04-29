@@ -2,6 +2,7 @@ package com.snowy.ttword.activity;
 
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 
 import com.snowy.common.activity.BaseActivity;
 import com.snowy.common.utils.ScreenUtils;
+import com.snowy.common.utils.SharedPreferencesManager;
+import com.snowy.ttword.Constants;
 import com.snowy.ttword.R;
 import com.snowy.ttword.adapter.PhoneticListAdapter;
 
@@ -96,6 +99,10 @@ public class PhoneticListActivity extends BaseActivity implements View.OnClickLi
 
         voiceIb = findViewById(R.id.voice_ib);
         voiceIb.setOnClickListener(this);
+
+
+        boolean isSelect = SharedPreferencesManager.getInstance(getApplicationContext()).getBoolean(Constants.SP_KEY_PHONETIC_LIST_VOICE, false);
+        voiceIb.setSelected(isSelect);
     }
 
     @Override
@@ -106,6 +113,7 @@ public class PhoneticListActivity extends BaseActivity implements View.OnClickLi
                 break;
             case R.id.voice_ib:
                 voiceIb.setSelected(!voiceIb.isSelected());
+                SharedPreferencesManager.getInstance(getApplicationContext()).putBoolean(Constants.SP_KEY_PHONETIC_LIST_VOICE, voiceIb.isSelected());
                 break;
             default:
                 break;
