@@ -67,6 +67,7 @@ public class OkHttpManager {
                 }
             }
         }
+        enqueue();
 
 //        List<DataPart> fileList = new ArrayList<>();
 //        for (DataPart dataPart : list) {

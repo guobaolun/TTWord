@@ -11,7 +11,6 @@ import com.snowy.ttword.MyApplication;
 import com.snowy.ttword.R;
 import com.snowy.ttword.fragment.EmptyFragment;
 import com.snowy.ttword.fragment.MeFragment;
-import com.snowy.ttword.fragment.WordBookFragment;
 import com.snowy.ttword.fragment.WordFragment;
 import com.snowy.widget.TabFragmentHost;
 
