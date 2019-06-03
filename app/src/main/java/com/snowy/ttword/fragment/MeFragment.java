@@ -29,14 +29,6 @@ public class MeFragment extends Fragment implements IWordView {
         View view = inflater.inflate(R.layout.fragment_study, container,false);
 
 
-        final WordPresenter wordPresenter = new WordPresenter(this);
-        view.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.out.println("-*-----------onClick----------");
-                wordPresenter.setData();
-            }
-        });
         return view;
     }
 

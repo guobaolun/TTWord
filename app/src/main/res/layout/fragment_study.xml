@@ -21,13 +21,6 @@
 
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:text="haha"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
 
 
 </LinearLayout>

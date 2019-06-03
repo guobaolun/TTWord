@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <color name="index_menu_bg">#172941</color>
     <color name="theme_bg">#081724</color>
     <color name="theme_item_bg">#131E30</color>
 
     <color name="item_bg">#172841</color>
-
 
     <color name="fragment_word_item_text_pressed">#90FFFFFF</color>
     <color name="fragment_word_item_text_normal">#ffffff</color>

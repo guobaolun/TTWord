@@ -34,7 +34,6 @@ public class IndexActivity extends BaseActivity {
     private String[] mTextEhArray = {"Word", "Notebook", "Me"};
 
 
-
     private Class<?>[] fragmentArray = {
             WordFragment.class,
             EmptyFragment.class,
@@ -49,7 +48,6 @@ public class IndexActivity extends BaseActivity {
     }
 
 
-
     @Override
     public void initView() {
 
@@ -59,18 +57,18 @@ public class IndexActivity extends BaseActivity {
 
         mTabHost.setup(this, getSupportFragmentManager(), R.id.index_body);
 
-        mTabHost.getTabWidget().setDividerDrawable(R.color.google_blue);
+//        mTabHost.getTabWidget().setDividerDrawable(R.color.google_blue);
 
         for (int i = 0; i < fragmentArray.length; i++) {
             //为每一个Tab按钮设置图标、文字和内容
-            TabSpec tabSpec = mTabHost.newTabSpec(mTextZhArray[i]).setIndicator(getTabItemView(i));
+            View menuItem = getTabItemView(i);
+            TabSpec tabSpec = mTabHost.newTabSpec(mTextZhArray[i]).setIndicator(menuItem);
             //将Tab按钮添加进Tab选项卡中
             mTabHost.addTab(tabSpec, fragmentArray[i], null);
 //			//设置Tab按钮的背景
 //			mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.selector_tab_background);
         }
     }
-
 
 
     /**
@@ -114,7 +112,6 @@ public class IndexActivity extends BaseActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
-
 
 
 }
