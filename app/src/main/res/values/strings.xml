@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TTWord</string>
+    <string name="content_description">图片</string>
 </resources>

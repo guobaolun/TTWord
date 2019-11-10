@@ -12,14 +12,36 @@
 
         <TextView
             android:text="学习"
+
+            android:textColor="@color/title_text"
             android:textSize="@dimen/top_title_text_size"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
-            android:textColor="#ffffff"
+
             android:layout_height="wrap_content" />
 
 
     </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/bt"
+        android:text="哈哈"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageButton
+        android:contentDescription="@string/content_description"
+        android:id="@+id/recording_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_recording_bt" />
+
+
+
 
 
 

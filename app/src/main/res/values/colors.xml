@@ -9,12 +9,25 @@
     <color name="fragment_word_item_text_pressed">#701F3F59</color>
     <color name="fragment_word_item_text_normal">#1F3F59</color>
 
+    <color name="title_text">#1F3F59</color>
+
+
+
+
+    <!-- 11 -->
     <!-- 底部菜单字体 -->
     <color name="index_menu_text_normal">#701F3F59</color>
     <color name="index_menu_text_pressed">#1F3F59</color>
 
+    <!-- night 底部菜单字体 -->
+    <color name="night_index_menu_text_normal">#70ffffff</color>
+    <color name="night_index_menu_text_pressed">#ffffff</color>
 
 
-    <!--<color name="index_menu_text_normal">#00ff00</color>-->
-    <!--<color name="index_menu_text_pressed">#00fff0</color>-->
+
+
+
+
+
+
 </resources>

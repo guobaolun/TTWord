@@ -7,6 +7,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -18,13 +19,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_alignParentBottom="true"
+            android:contentDescription="@string/content_description"
             android:scaleType="fitXY"
             android:src="@drawable/index_menu_shadow" />
+
     </RelativeLayout>
 
 

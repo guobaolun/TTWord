@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:contentDescription="@string/content_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/index_menu_shadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/index_menu_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="跟大家说两句吧"
+            android:textColor="#A0A0A0"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/send_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/show_voice_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/ic_comment_details_keyboard"
+                android:contentDescription="@string/content_description" />
+
+
+            <Button
+                android:id="@+id/send_content_bt"
+                style="@style/Button"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/selector_comment_details_send_bt"
+                android:paddingLeft="12dp"
+
+                android:paddingTop="7dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="7dp"
+                android:text="发表"
+                android:textColor="@color/title_text"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/message_et"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toStartOf="@id/send_content_bt"
+                android:layout_toEndOf="@id/show_voice_ib"
+                android:background="@drawable/comment_edittext_bg"
+                android:hint="跟大家说两句吧"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:minLines="1"
+                android:padding="7dp"
+                android:textColor="#CFD3E9"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/voice_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_line_height"
+                android:background="#011274" />
+
+            <TextView
+                android:id="@+id/recording_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="0''"
+                android:textColor="#CFD3E9"
+                android:textSize="14dp"
+                android:visibility="invisible" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/center_rl"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/recording_ib"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/selector_recording_bt"
+                        android:contentDescription="@string/content_description" />
+
+
+                    <com.snowy.widget.CircleMusicProgressBar
+                        android:id="@+id/musicProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_circle_music_progressbar_bg"
+                        android:visibility="gone"
+                        app:border_color="#ffffff"
+                        app:border_width="3dp"
+                        app:centercircle_diammterer="1"
+                        app:progress_color="#F06fF0"
+                        app:progress_startAngle="270" />
+
+
+                    <ImageButton
+                        android:id="@+id/recording_play_ib"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/selector_recording_play_bt"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/re_record_bt"
+                    style="@style/Button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_toStartOf="@id/center_rl"
+                    android:background="@drawable/selector_re_record_bt"
+                    android:text="重录"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/recording_send_bt"
+                    style="@style/Button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@id/center_rl"
+                    android:background="@drawable/selector_re_record_bt"
+                    android:text="发送"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

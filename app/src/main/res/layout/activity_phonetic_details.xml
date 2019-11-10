@@ -8,33 +8,44 @@
     android:orientation="vertical">
 
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/top_height"
         android:background="@color/theme_item_bg">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            style="@style/TitleText"
             android:text="音标"
-            android:textColor="@color/fragment_word_item_text_normal"
-            android:textSize="@dimen/top_title_text_size" />
+            android:textColor="@color/title_text" />
+
 
         <ImageButton
-            android:id="@+id/back_ib"
-            android:layout_width="@dimen/top_height"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:src="@drawable/selector_back_bt" />
+            style="@style/BackButton"
+            android:contentDescription="@string/content_description" />
 
 
     </RelativeLayout>
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
+        <include
+            android:id="@+id/send_layout"
+            layout="@layout/item_comment_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            layout="@layout/layout_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/send_layout" />
+
+    </RelativeLayout>
 
 
 </LinearLayout>

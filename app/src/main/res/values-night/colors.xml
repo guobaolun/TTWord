@@ -9,10 +9,13 @@
     <color name="fragment_word_item_text_pressed">#90FFFFFF</color>
     <color name="fragment_word_item_text_normal">#ffffff</color>
 
-    <!-- 底部菜单字体 -->
+    <color name="title_text">#ffffff</color>
+
+
+
+    <!-- night 底部菜单字体 -->
     <color name="index_menu_text_normal">#70ffffff</color>
     <color name="index_menu_text_pressed">#ffffff</color>
-
 
 
 </resources>

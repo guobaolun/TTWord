@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phonetic_list_bt_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/text_ll"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/word_tv"
+            android:padding="5dp"
+            android:text="feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#502f50" />
+
+        <TextView
+            android:id="@+id/phonetic_tv"
+            android:padding="5dp"
+            android:text="[fi:t]"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00ff00" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sound_iv"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <!--android:src="@drawable/ic_sound_up_off"-->
+
+
+</RelativeLayout>
+

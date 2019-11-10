@@ -20,4 +20,35 @@
         <item name="android:layout_margin">@dimen/phonetic_list_bt_margin</item>
     </style>
 
+
+    <style name="BackButton" parent="@style/PhoneticListGridItemText">
+        <item name="android:layout_width">@dimen/top_height</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:src">@drawable/selector_back_bt</item>
+        <item name="android:id">@id/back_ib</item>
+        <item name="android:paddingStart">10dp</item>
+    </style>
+
+
+    <style name="TitleRightButton" >
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:layout_width">@dimen/top_height</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+
+
+    <style name="TitleText" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:textSize">@dimen/top_title_text_size</item>
+    </style>
+
+
+
 </resources>

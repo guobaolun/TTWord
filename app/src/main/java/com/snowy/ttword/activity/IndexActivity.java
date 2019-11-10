@@ -1,5 +1,7 @@
 package com.snowy.ttword.activity;
 
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TabHost.TabSpec;
@@ -7,12 +9,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.snowy.common.activity.BaseActivity;
+import com.snowy.common.utils.SharedPreferencesManager;
+import com.snowy.ttword.Constants;
 import com.snowy.ttword.MyApplication;
 import com.snowy.ttword.R;
 import com.snowy.ttword.fragment.EmptyFragment;
 import com.snowy.ttword.fragment.MeFragment;
 import com.snowy.ttword.fragment.WordFragment;
 import com.snowy.widget.TabFragmentHost;
+
+import java.util.ArrayList;
 
 /**
  * @author guobaolun
@@ -70,6 +76,7 @@ public class IndexActivity extends BaseActivity {
         }
     }
 
+    ArrayList<TextView> textViewArray = new ArrayList<>();
 
     /**
      * 给Tab按钮设置文字
@@ -88,8 +95,42 @@ public class IndexActivity extends BaseActivity {
             menuEnTV.setSelected(true);
         }
 
+        textViewArray.add(menuEnTV);
+        textViewArray.add(menuZhTV);
         return view;
     }
+
+
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        System.out.println("====a====onResume======");
+
+
+
+        int mode = SharedPreferencesManager.getInstance(getActivity()).getInt(Constants.SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_NO);
+
+        if (mode == AppCompatDelegate.MODE_NIGHT_NO) {
+            for (TextView tv:textViewArray) {
+                tv.setTextColor(ContextCompat.getColorStateList(getApplicationContext(), R.color.selector_index_menu_text_color));
+            }
+        }else{
+            for (TextView tv:textViewArray) {
+                tv.setTextColor(ContextCompat.getColorStateList(getApplicationContext(), R.color.selector_night_index_menu_text_color));
+            }
+        }
+
+
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        System.out.println("=====a===onPause======");
+    }
+
 
     /**
      * 再按一次退出程序

@@ -21,7 +21,7 @@
 
     <uses-permission android:name="android.telephony.TelephonyManager.SIM_STATE_READY" />
     <uses-permission android:name="android.telephony.TelephonyManager.SIM_STATE_ABSENT" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".MyApplication"
@@ -32,7 +32,6 @@
         android:supportsRtl="true"
         android:theme="@style/StyledIndicators"
         tools:replace="android:allowBackup">
-
 
 
         <activity

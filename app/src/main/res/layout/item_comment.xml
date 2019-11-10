@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.snowy.widget.CircleImageView
+            android:id="@+id/portrait_iv"
+            android:layout_width="38dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/item_margin_left_and_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/child_comment_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                />
+                <!--android:src="@drawable/ic_comment" -->
+
+
+            <ImageButton
+                android:id="@+id/feed_like_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                />
+                <!--android:src="@drawable/selector_feed_like" -->
+
+
+            <TextView
+                android:id="@+id/feed_like_count_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-5dp"
+                android:text="0"
+                android:textColor="#A0A0A0"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/portrait_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ProfessorKwok"
+                android:textColor="#00ff00"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="12-28"
+                android:textColor="#A0A0A0"
+                android:textSize="11dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="@dimen/item_margin_left_and_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#00ff00"
+            android:textSize="14dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/voice_rl"
+            android:layout_width="120dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/voice_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:text="01:15"
+                android:textColor="#00ff00"
+                android:textSize="12dp" />
+
+
+            <ImageView
+                android:id="@+id/voice_icon_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+
+                android:src="@drawable/voice_3" />
+
+        </RelativeLayout>
+
+
+        <com.snowy.widget.FollowListView
+            android:id="@+id/listview"
+            android:background="#00ff00"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

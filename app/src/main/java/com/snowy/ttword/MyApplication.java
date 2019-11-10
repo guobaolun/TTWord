@@ -18,7 +18,9 @@ public class MyApplication extends BaseApplication {
 
         int mode = SharedPreferencesManager.getInstance(getApplicationContext()).getInt(Constants.SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_NO);
 //        mode = SharedPreferencesManager.getInstance(getApplicationContext()).getInt(Constants.SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_YES);
+        SharedPreferencesManager.getInstance(getApplicationContext()).putInt(Constants.SP_KEY_THEME_MODE,mode);
         AppCompatDelegate.setDefaultNightMode(mode);
+
     }
 
 
