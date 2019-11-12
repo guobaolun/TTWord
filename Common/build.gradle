@@ -27,6 +27,8 @@ android {
 }
 
 dependencies {
+
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
 //    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     api 'com.alibaba:fastjson:1.2.62'
     api project(':Glide')
