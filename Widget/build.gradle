@@ -38,16 +38,25 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
-    //    implementation project(':Glide')
-    //    implementation project(':SwipeToLoadLayout')
+//    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+//    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+
+
+//    implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
+//    implementation "androidx.cardview:cardview:$rootProject.cardview"
+//    implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerview"
+
+
+
     //    https://github.com/Aspsine/SwipeToLoadLayout
     api 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+
     //    https://github.com/lsjwzh/MaterialLoadingProgressBar
     api 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+
     //    https://github.com/yanzhenjie/SwipeRecyclerView
     api 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+
     api 'com.github.thinkcool:circletextimageview:1.0.20151218'
     api project(':AutoScrollViewpager')
 }

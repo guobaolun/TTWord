@@ -16,8 +16,10 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatImageView;
 
-public class CircleImageView extends android.support.v7.widget.AppCompatImageView {
+
+public class CircleImageView extends AppCompatImageView {
 
     private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 

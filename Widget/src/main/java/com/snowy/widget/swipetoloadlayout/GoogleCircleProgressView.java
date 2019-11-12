@@ -13,11 +13,13 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.net.Uri;
-import android.support.annotation.ColorRes;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
+import android.view.View;
 import android.view.animation.Animation;
+
+import androidx.annotation.ColorRes;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.core.view.ViewCompat;
 
 import com.lsjwzh.widget.materialloadingprogressbar.MaterialProgressDrawable;
 import com.snowy.widget.R;
@@ -162,7 +164,7 @@ public class GoogleCircleProgressView extends AppCompatImageView {
             } else {
                 ovalShadow.setRadialGradient(mShadowRadius, mDiameter - mShadowRadius * 2);
                 mBgCircle.setShape(ovalShadow);
-                setLayerType( ViewCompat.LAYER_TYPE_SOFTWARE, mBgCircle.getPaint());
+                setLayerType( View.LAYER_TYPE_SOFTWARE, mBgCircle.getPaint());
                 mBgCircle.getPaint().setShadowLayer(mShadowRadius, shadowXOffset, shadowYOffset, KEY_SHADOW_COLOR);
                 final int padding = mShadowRadius;
                 // set padding so the inner image sits correctly within the shadow.

@@ -1,6 +1,7 @@
 package com.snowy.ttword.dao.entity;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 
 public class Country implements Comparable{

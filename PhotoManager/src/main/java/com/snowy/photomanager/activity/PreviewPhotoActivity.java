@@ -4,11 +4,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+
+import androidx.core.content.ContextCompat;
 
 import com.snowy.common.dialog.ConfirmDialogManager;
 import com.snowy.common.utils.ScreenUtils;

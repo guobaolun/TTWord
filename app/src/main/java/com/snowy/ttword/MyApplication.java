@@ -1,6 +1,7 @@
 package com.snowy.ttword;
 
-import android.support.v7.app.AppCompatDelegate;
+
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.snowy.common.BaseApplication;
 import com.snowy.common.manager.CrashHandler;

@@ -11,8 +11,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
+import androidx.appcompat.widget.AppCompatButton;
 
-public class ClickButton extends android.support.v7.widget.AppCompatButton {
+
+public class ClickButton extends AppCompatButton {
 
     private Animator anim1;
     private Animator anim2;

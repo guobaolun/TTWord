@@ -1,11 +1,12 @@
 package com.snowy.photomanager.adapter;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.snowy.common.utils.ScreenUtils;
 import com.snowy.glide.GlideUtils;

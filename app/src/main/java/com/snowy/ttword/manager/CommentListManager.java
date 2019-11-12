@@ -1,6 +1,7 @@
 package com.snowy.ttword.manager;
 
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.snowy.common.activity.BaseActivity;
 import com.snowy.ttword.adapter.CommentAdapter;

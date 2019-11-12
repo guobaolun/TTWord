@@ -26,7 +26,11 @@ android {
 }
 
 dependencies {
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
+
+
+
+//    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
 //    https://github.com/angeldevil/AutoScrollViewPager
 //    compile 'me.angeldevil:AutoScrollViewPager:1.0.8'
 }

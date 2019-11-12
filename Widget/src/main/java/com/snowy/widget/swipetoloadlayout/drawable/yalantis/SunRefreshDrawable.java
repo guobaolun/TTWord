@@ -9,12 +9,13 @@ import android.graphics.Matrix;
 import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.drawable.Animatable;
-import android.support.annotation.NonNull;
 import android.util.TypedValue;
 import android.view.animation.Animation;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.Transformation;
+
+import androidx.annotation.NonNull;
 
 import com.snowy.widget.R;
 import com.snowy.widget.swipetoloadlayout.header.YalantisPhoenixRefreshHeaderView;

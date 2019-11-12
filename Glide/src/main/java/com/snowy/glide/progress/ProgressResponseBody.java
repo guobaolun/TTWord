@@ -1,6 +1,7 @@
 package com.snowy.glide.progress;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import java.io.IOException;
 

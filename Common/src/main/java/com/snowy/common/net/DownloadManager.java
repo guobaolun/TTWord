@@ -2,8 +2,9 @@ package com.snowy.common.net;
 
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.NonNull;
 
+
+import androidx.annotation.NonNull;
 
 import com.snowy.common.entity.DownloadMassage;
 

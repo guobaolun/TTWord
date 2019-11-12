@@ -5,9 +5,6 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +12,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabWidget;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import java.util.ArrayList;
 
@@ -95,11 +96,13 @@ public class TabFragmentHost extends TabHost implements TabHost.OnTabChangeListe
         // Note that we call through to the version that takes an AttributeSet,
         // because the simple Context construct can result in a broken object!
         super(context, null);
+        System.err.println("---------------TabFragmentHost----------1------- "+hashCode());
         initFragmentTabHost(context, null);
     }
 
     public TabFragmentHost(Context context, AttributeSet attrs) {
         super(context, attrs);
+        System.err.println("------------TabFragmentHost----------2---------- "+hashCode());
         initFragmentTabHost(context, attrs);
     }
 
@@ -293,6 +296,7 @@ public class TabFragmentHost extends TabHost implements TabHost.OnTabChangeListe
 
     private FragmentTransaction doTabChanged(String tabId, FragmentTransaction ft) {
         TabInfo newTab = null;
+        System.out.println("-----------mTabs--- "+mTabs+"         "+this.hashCode());
         for (int i = 0; i < mTabs.size(); i++) {
             TabInfo tab = mTabs.get(i);
             if (tab.tag.equals(tabId)) {

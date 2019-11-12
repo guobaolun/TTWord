@@ -1,12 +1,13 @@
 package com.snowy.ttword.activity;
 
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.content.ContextCompat;
 
 import com.snowy.common.activity.BaseActivity;
 import com.snowy.common.utils.SharedPreferencesManager;
@@ -48,6 +49,9 @@ public class IndexActivity extends BaseActivity {
     };
 
 
+   private ArrayList<TextView> textViewArray = new ArrayList<>();
+
+
     @Override
     protected int onContentView() {
         return R.layout.activity_index;
@@ -60,6 +64,7 @@ public class IndexActivity extends BaseActivity {
 
         //实例化TabHost对象，得到TabHost
         TabFragmentHost mTabHost = findViewById(R.id.index_host);
+        System.out.println("-----------initView-----------------"+mTabHost.hashCode());
 
         mTabHost.setup(this, getSupportFragmentManager(), R.id.index_body);
 
@@ -76,7 +81,7 @@ public class IndexActivity extends BaseActivity {
         }
     }
 
-    ArrayList<TextView> textViewArray = new ArrayList<>();
+
 
     /**
      * 给Tab按钮设置文字

@@ -1,6 +1,7 @@
 package com.snowy.ttword.entity;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 /**
  * @author guobaolun
