@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/phonetic_list_bt_bg"
+    style="@style/PhoneticListGridItemText"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -18,9 +18,10 @@
             android:id="@+id/word_tv"
             android:padding="5dp"
             android:text="feet"
+            android:textColor="@drawable/selector_fragment_word_item_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#502f50" />
+            />
 
         <TextView
             android:id="@+id/phonetic_tv"
@@ -34,7 +35,7 @@
     <ImageView
         android:id="@+id/sound_iv"
         android:layout_margin="10dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
         <!--android:src="@drawable/ic_sound_up_off"-->
