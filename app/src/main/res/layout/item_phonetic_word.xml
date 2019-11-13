@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PhoneticListGridItemText"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/PhoneticListGridItemText"
     android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/text_ll"
-        android:padding="10dp"
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/word_tv"
-            android:padding="5dp"
-            android:text="feet"
-            android:textColor="@drawable/selector_fragment_word_item_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:padding="5dp"
+            android:text="feet"
+            android:textColor="@drawable/selector_fragment_word_item_text" />
 
         <TextView
             android:id="@+id/phonetic_tv"
-            android:padding="5dp"
-            android:text="[fi:t]"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#00ff00" />
+            android:padding="5dp"
+            android:text="[fi:t]"
+            android:textColor="@drawable/selector_fragment_word_item_text"  />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/sound_iv"
-        android:layout_margin="10dp"
-        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-        <!--android:src="@drawable/ic_sound_up_off"-->
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp" />
+    <!--android:src="@drawable/ic_sound_up_off"-->
 
 
 </RelativeLayout>

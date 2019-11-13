@@ -115,6 +115,10 @@ public class PhoneticDetailsActivity extends BaseActivity implements View.OnClic
 
             GridView gridview = itemView.findViewById(R.id.gridview);
 
+
+
+
+
             wordAdapter = new PhoneticWordBaseAdapter(getApplicationContext());
             wordAdapter.setRegex(regex);
             gridview.setAdapter(wordAdapter);

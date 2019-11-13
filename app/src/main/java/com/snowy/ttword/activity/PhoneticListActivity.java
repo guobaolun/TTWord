@@ -72,20 +72,17 @@ public class PhoneticListActivity extends BaseActivity implements View.OnClickLi
         vowelTv.setLayoutParams(params);
         consonantTv.setLayoutParams(params);
 
-
         LinearLayout vowelLl = findViewById(R.id.vowel_ll);
         ViewGroup.LayoutParams vowelParams = vowelLl.getLayoutParams();
         vowelParams.height = itemHeight * 5;
 //        vowelParams.width = ScrollView.LayoutParams.MATCH_PARENT;
         vowelLl.setLayoutParams(vowelParams);
 
-
         LinearLayout consonantLl = findViewById(R.id.consonant_ll);
         ViewGroup.LayoutParams consonantParams = consonantLl.getLayoutParams();
         consonantParams.height = itemHeight * 9;
         consonantParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
         consonantLl.setLayoutParams(consonantParams);
-
 
         GridView vowelGridView = findViewById(R.id.vowel_gridview);
         vowelGridView.setAdapter(new PhoneticListAdapter(this, VOWEL_ARR, itemHeight));

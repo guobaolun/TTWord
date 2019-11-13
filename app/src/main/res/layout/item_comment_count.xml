@@ -8,37 +8,38 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="#00ff00" />
+        />
 
     <LinearLayout
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="@color/theme_item_bg"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <TextView
-            android:layout_marginStart="10dp"
-            android:textColor="@color/index_menu_text_normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14dp"
-            android:text="评论" />
+            android:layout_marginStart="10dp"
+            android:text="评论"
+            android:textColor="@color/index_menu_text_normal"
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/comment_count_tv"
-            android:textSize="14dp"
-            android:layout_marginStart="5dp"
-            android:textColor="@color/index_menu_text_normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0" />
+            android:layout_marginStart="5dp"
+            android:text="0"
+            android:textColor="@color/index_menu_text_normal"
+            android:textSize="14dp" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#00ff00" />
-
+        android:layout_height="10dp"
+        />
 
 </LinearLayout>
