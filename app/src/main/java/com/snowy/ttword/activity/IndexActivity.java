@@ -87,7 +87,7 @@ public class IndexActivity extends BaseActivity {
      * 给Tab按钮设置文字
      */
     private View getTabItemView(int position) {
-        View view = View.inflate(getApplicationContext(), R.layout.item_index_meun, null);
+        View view = View.inflate(this, R.layout.item_index_meun, null);
 
 
         TextView menuZhTV = view.findViewById(R.id.main_menu_zh_tv);
@@ -111,23 +111,6 @@ public class IndexActivity extends BaseActivity {
     public void onResume() {
         super.onResume();
         System.out.println("====a====onResume======");
-
-
-
-        int mode = SharedPreferencesManager.getInstance(getActivity()).getInt(Constants.SP_KEY_THEME_MODE, AppCompatDelegate.MODE_NIGHT_NO);
-
-        if (mode == AppCompatDelegate.MODE_NIGHT_NO) {
-            for (TextView tv:textViewArray) {
-                tv.setTextColor(ContextCompat.getColorStateList(getApplicationContext(), R.color.selector_index_menu_text_color));
-            }
-        }else{
-            for (TextView tv:textViewArray) {
-                tv.setTextColor(ContextCompat.getColorStateList(getApplicationContext(), R.color.selector_night_index_menu_text_color));
-            }
-        }
-
-
-
     }
 
     @Override

@@ -119,7 +119,7 @@ public class PhoneticDetailsActivity extends BaseActivity implements View.OnClic
 
 
 
-            wordAdapter = new PhoneticWordBaseAdapter(getApplicationContext());
+            wordAdapter = new PhoneticWordBaseAdapter(getActivity());
             wordAdapter.setRegex(regex);
             gridview.setAdapter(wordAdapter);
 

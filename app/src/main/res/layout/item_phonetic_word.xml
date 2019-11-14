@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="[fi:t]"
-            android:textColor="@drawable/selector_fragment_word_item_text"  />
+            android:textColor="@drawable/selector_fragment_word_item_text" />
     </LinearLayout>
 
     <ImageView
