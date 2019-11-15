@@ -63,19 +63,19 @@
 
 
         <com.snowy.widget.FollowGridView
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:id="@+id/gridview"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:cacheColorHint="@android:color/transparent"
             android:divider="@android:color/transparent"
             android:dividerHeight="0dp"
-            android:horizontalSpacing="10dp"
+            android:horizontalSpacing="5dp"
             android:listSelector="@android:color/transparent"
             android:numColumns="2"
             android:overScrollMode="never"
             android:scrollbars="none"
-            android:verticalSpacing="10dp" />
+            android:verticalSpacing="5dp" />
 
 
     </LinearLayout>
@@ -84,8 +84,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginRight="14dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
 
         <LinearLayout
