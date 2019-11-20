@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -95,6 +96,13 @@ public class SwipeToLoadManager {
         Drawable drawable = ContextCompat.getDrawable(context, R.drawable.line_divider);
         recyclerView.addItemDecoration(new SimpleDividerItemDecoration(context, drawable, ScreenUtils.dip2px(context, 0.8f)));
     }
+
+
+    public void addItemDecoration(@DrawableRes int colorId,float height) {
+        Drawable drawable = ContextCompat.getDrawable(context, colorId);
+        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(context, drawable, ScreenUtils.dip2px(context, height)));
+    }
+
 
 
     private void initRecyclerView() {

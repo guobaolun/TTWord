@@ -61,7 +61,7 @@ public class PhoneticDetailsActivity extends BaseActivity implements View.OnClic
         ImageButton backIb = findViewById(R.id.back_ib);
         backIb.setOnClickListener(this);
 
-        new CommentSendManager(this);
+        CommentSendManager sendManager = new CommentSendManager(this);
 
         CommentListManager commentManager = new CommentListManager(getBaseActivity());
 
@@ -70,7 +70,6 @@ public class PhoneticDetailsActivity extends BaseActivity implements View.OnClic
         HeadViewHolder headViewHolder = new HeadViewHolder(headerView);
         commentManager.setHeadView(headViewHolder);
 //        commentManager.setLoaderListener();
-
 
         queryPhonetic();
     }
@@ -90,6 +89,7 @@ public class PhoneticDetailsActivity extends BaseActivity implements View.OnClic
         switch (v.getId()){
             case R.id.back_ib:
                 finish();
+                break;
             case R.id.refresh_ll:
                 queryPhonetic();
                 break;

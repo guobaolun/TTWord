@@ -38,7 +38,6 @@ public class CommentListManager {
         swipeToLoadManager = new SwipeToLoadManager(mActivity, mActivity.getContentView(), listener, commentAdapter);
         swipeToLoadManager.setScrollLoadingMore();
         swipeToLoadManager.showRecyclerView();
-        swipeToLoadManager.addItemDecoration();
 //        swipeToLoadManager.setScrollListener(commentSendManager.getOnScrollListener());
         swipeToLoadManager.setLoadMoreEnabled(false);
 
